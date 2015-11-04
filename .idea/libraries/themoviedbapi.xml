@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="themoviedbapi">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../api-themoviedb/classes/artifacts/themoviedbapi_jar/themoviedbapi.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
