@@ -13,6 +13,10 @@ public class Window extends JFrame{ //starting window
     private Media media;
     /* Menu toolbar */
     private JMenuBar menuBar;
+    /* Menu */
+    private JMenu menu;
+    /* Menu Items */
+    private JMenuItem item;
 
 
     public Window(){
@@ -25,10 +29,20 @@ public class Window extends JFrame{ //starting window
 
     private void setup(){
         setTitle(Constants.PROGRAM_NAME);
-        menuBar = new JMenuBar();
-        setLocation(500,500);
+        setLocation(500, 500);
         setPreferredSize(new Dimension(600,260)); //size
+        setMenuOptions();
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+    }
+
+    private void setMenuOptions(){
+        menu = new JMenu("My menu");
+        menu.add(new JMenuItem("First Item"));
+        menu.add(new JMenuItem("Second Item"));
+        menu.add(new JMenuItem("Third Item"));
+        menuBar = new JMenuBar();
+        menuBar.add(menu);
+        setJMenuBar(menuBar);
     }
 
     private void build(){
