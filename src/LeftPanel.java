@@ -62,6 +62,7 @@ public class LeftPanel extends JPanel{
         mediaLabel.setLocation(200, 200);
         firstBox.add(mediaName = new JTextField());
         firstBox.add(movieButton = radioButton("Movie"));
+        movieButton.setSelected(true);
         firstBox.add(showButton = radioButton("Show"));
         firstBox.add(toggle = new JLabel("* Currently toggling a list of your movies"));
         //second box
