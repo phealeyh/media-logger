@@ -11,6 +11,9 @@ public class Window extends JFrame{ //starting window
     /* Private Instance Variables */
     /* The Media Program */
     private Media media;
+    /* Menu toolbar */
+    private JMenuBar menuBar;
+
 
     public Window(){
         media = new Media();
@@ -21,7 +24,8 @@ public class Window extends JFrame{ //starting window
     }
 
     private void setup(){
-        setTitle("Kevin's Media Database");
+        setTitle(Constants.PROGRAM_NAME);
+        menuBar = new JMenuBar();
         setLocation(500,500);
         setPreferredSize(new Dimension(600,260)); //size
         setDefaultCloseOperation(EXIT_ON_CLOSE);

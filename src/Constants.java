@@ -13,4 +13,5 @@ public class Constants {
     public static final String MOVIE_TOGGLE = "Movies (Toggle)";
     public static final String TOGGLING_MOVIES = "* Currently toggling a list of your movies";
     public static final String TOGGLING_SHOWS = "* Currently toggling a list of your shows";
+    public static final String PROGRAM_NAME = "Kevin's Media Database";
 }
