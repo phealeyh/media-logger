@@ -17,8 +17,6 @@ public class Window extends JFrame{ //starting window
     private JMenuBar menuBar;
     /* Menu */
     private JMenu menu;
-    /* Menu Items */
-    private JMenuItem item;
 
     public Window(){
         media = new Media();
@@ -31,7 +29,7 @@ public class Window extends JFrame{ //starting window
     private void setup(){
         setTitle(Constants.PROGRAM_NAME);
         setLocation(500, 500);
-        setPreferredSize(new Dimension(600,260)); //size
+        setPreferredSize(new Dimension(600,450)); //size
         setMenuOptions();
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }

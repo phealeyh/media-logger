@@ -32,6 +32,7 @@ public class MediaWindow extends JFrame {
 
 
 
+
     private class MediaPanel extends JPanel {
         public MediaPanel(){
             setup();
