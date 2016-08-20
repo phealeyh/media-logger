@@ -2,9 +2,7 @@ package model;
 
 import java.util.LinkedList;
 
-/**
- * Created by Phealey on 28/06/2014.
- */
+
 public class Viewable {
     private LinkedList<View> views = new LinkedList<View>();
 

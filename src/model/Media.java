@@ -7,9 +7,7 @@ import java.io.ObjectInputStream;
 import java.io.Serializable;
 import java.util.LinkedList;
 
-/**
- * Created by Phealey on 28/06/2014.
- */
+
 public class Media implements Serializable{
     /*Private Instance Variables */
     /* Movies object */

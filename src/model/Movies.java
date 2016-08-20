@@ -1,12 +1,9 @@
 package model;
 
-import java.io.Serializable;
 import java.util.LinkedList;
 
-/**
- * Created by Phealey on 28/06/2014.
- */
-public class Movies extends Viewable implements Serializable{
+
+public class Movies extends Viewable implements java.io.Serializable{
     /*Private Instance Variables */
     private LinkedList<Movie> movies;
 

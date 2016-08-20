@@ -1,6 +1,7 @@
 
 import com.sun.xml.internal.stream.writers.WriterUtility;
 import model.Media;
+import serialization.WriteToFile;
 
 import javax.swing.*;
 import java.awt.*;
@@ -34,6 +35,7 @@ public class Window extends JFrame{ //starting window
     }
 
     private void setMenuOptions(){
+
         menu = new JMenu("My menu");
         JMenuItem saveItem, saveAsItem, loadItem, closeItem;
         menu.add(saveItem = new JMenuItem("Save"));
@@ -50,7 +52,8 @@ public class Window extends JFrame{ //starting window
             @Override
             public void actionPerformed(ActionEvent e) {
                 //Save file
-                WriteToFile.saveToFile();
+                WriteToFile.serialiseMovies(media.movies());
+                WriteToFile.serialiseShows(media.shows());
             }
         });
         loadItem.addActionListener(new ActionListener() {
@@ -75,6 +78,8 @@ public class Window extends JFrame{ //starting window
     }
 
     private class Panel extends JPanel{ //starting panel
+
+
         public Panel(){
             setup();
             build();
