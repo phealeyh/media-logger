@@ -36,26 +36,33 @@ public class Window extends JFrame{ //starting window
 
     private void setMenuOptions(){
         menu = new JMenu("My menu");
-        JMenuItem item1, item2, item3;
-        menu.add(item1 = new JMenuItem("First Item"));
-        menu.add(item2 = new JMenuItem("Second Item"));
-        menu.add(item3 = new JMenuItem("Third Item"));
+        JMenuItem item1, item2, item3, item4;
+        menu.add(item1 = new JMenuItem("Save"));
+        menu.add(item2 = new JMenuItem("Save As"));
+        menu.add(item3 = new JMenuItem("Load"));
+        menu.add(item4 = new JMenuItem("Close"));
         item1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(getGlassPane(), "Item 1 selected");
+                JOptionPane.showMessageDialog(getGlassPane(), "Saving Media");
             }
         });
         item2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(getGlassPane(),"Item 2 selected");
+                JOptionPane.showMessageDialog(getGlassPane(),"Saving as");
             }
         });
         item3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(getGlassPane(),"Item 3 selected");
+                JOptionPane.showMessageDialog(getGlassPane(),"Loading media");
+            }
+        });
+        item4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(getGlassPane(), "Closing Program");
             }
         });
         menuBar = new JMenuBar();
