@@ -85,7 +85,7 @@ public class LeftPanel extends JPanel{
     }
 
     private JRadioButton radioButton(String name){
-        JRadioButton radioButton = new JRadioButton(name);
+    JRadioButton radioButton = new JRadioButton(name);
         radioButtons.add(radioButton);
         return radioButton;
     }
