@@ -1,6 +1,7 @@
 
 import com.sun.xml.internal.stream.writers.WriterUtility;
 import model.Media;
+import serialization.LoadToFile;
 import serialization.WriteToFile;
 
 import javax.swing.*;
@@ -60,6 +61,9 @@ public class Window extends JFrame{ //starting window
             @Override
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(getGlassPane(),"Loading media");
+                media.setMovies(LoadToFile.deserialiseMovies());
+                media.setShows(LoadToFile.deserialiseShows());
+
             }
         });
         closeItem.addActionListener(new ActionListener() {
