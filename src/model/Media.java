@@ -61,6 +61,14 @@ public class Media implements Serializable{
         return shows;
     }
 
+    public void setMovies(Movies movies){
+        this.movies = movies;
+    }
+
+    public void setShows(Shows shows){
+        this.shows = shows;
+    }
+
 
 
 
