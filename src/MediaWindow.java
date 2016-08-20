@@ -1,9 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-/**
- * Created by Phealey on 6/07/2014.
- */
+
 public class MediaWindow extends JFrame {
     /* Private Instance Variables */
     /* Media name */

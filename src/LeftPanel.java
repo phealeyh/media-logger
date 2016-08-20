@@ -8,9 +8,7 @@ import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-/**
- * Created by Phealey on 28/06/2014.
- */
+
 public class LeftPanel extends JPanel{
     /* Private Instance Variables */
     /* Right Panel */

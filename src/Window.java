@@ -1,6 +1,5 @@
-/**
- * Created by Phealey on 28/06/2014.
- */
+
+import com.sun.xml.internal.stream.writers.WriterUtility;
 import model.Media;
 
 import javax.swing.*;
@@ -36,30 +35,31 @@ public class Window extends JFrame{ //starting window
 
     private void setMenuOptions(){
         menu = new JMenu("My menu");
-        JMenuItem item1, item2, item3, item4;
-        menu.add(item1 = new JMenuItem("Save"));
-        menu.add(item2 = new JMenuItem("Save As"));
-        menu.add(item3 = new JMenuItem("Load"));
-        menu.add(item4 = new JMenuItem("Close"));
-        item1.addActionListener(new ActionListener() {
+        JMenuItem saveItem, saveAsItem, loadItem, closeItem;
+        menu.add(saveItem = new JMenuItem("Save"));
+        menu.add(saveAsItem = new JMenuItem("Save As"));
+        menu.add(loadItem = new JMenuItem("Load"));
+        menu.add(closeItem = new JMenuItem("Close"));
+        saveItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(getGlassPane(), "Saving Media");
             }
         });
-        item2.addActionListener(new ActionListener() {
+        saveAsItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(getGlassPane(),"Saving as");
+                //Save file
+                WriteToFile.saveToFile();
             }
         });
-        item3.addActionListener(new ActionListener() {
+        loadItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(getGlassPane(),"Loading media");
             }
         });
-        item4.addActionListener(new ActionListener() {
+        closeItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(getGlassPane(), "Closing Program");

@@ -5,9 +5,7 @@ import java.awt.*;
 import java.util.LinkedList;
 
 import model.*;
-/**
- * Created by Phealey on 28/06/2014.
- */
+
 public class RightPanel extends JPanel implements View{
 
     /* Private Instance Variables */
