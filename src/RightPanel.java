@@ -125,6 +125,7 @@ public class RightPanel extends JPanel implements View{
 
     public void viewMovie(String name){
         if(media.mediaExists(name)){
+            //h
             JOptionPane.showMessageDialog(new JFrame(), "Showing " + name.substring(0,1).toUpperCase()
                     + name.substring(1));
         }
