@@ -11,7 +11,6 @@ import java.awt.event.ActionListener;
 public class Window extends JFrame{ //starting window
 
     /* Private Instance Variables */
-    /* The Media Program */
     private Media media;
     /* Menu toolbar */
     private JMenuBar menuBar;
