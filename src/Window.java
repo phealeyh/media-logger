@@ -70,6 +70,8 @@ public class Window extends JFrame{ //starting window
             @Override
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(getGlassPane(), "Closing Program");
+                System.exit(0);
+
             }
         });
         menuBar = new JMenuBar();
