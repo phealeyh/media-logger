@@ -17,4 +17,5 @@ public class Constants {
     public static final String SAVE_AS = "Save As";
     public static final String LOAD = "Load";
     public static final String EXIT = "Close";
+    public static final String KEVIN = "kevin";
 }
