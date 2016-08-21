@@ -1,7 +1,6 @@
 
-import com.sun.xml.internal.stream.writers.WriterUtility;
 import model.Media;
-import serialization.LoadToFile;
+import serialization.LoadFromFile;
 import serialization.WriteToFile;
 
 import javax.swing.*;
@@ -37,12 +36,12 @@ public class Window extends JFrame{ //starting window
 
     private void setMenuOptions(){
 
-        menu = new JMenu("My menu");
+        menu = new JMenu(Constants.MENU);
         JMenuItem saveItem, saveAsItem, loadItem, closeItem;
-        menu.add(saveItem = new JMenuItem("Save"));
-        menu.add(saveAsItem = new JMenuItem("Save As"));
-        menu.add(loadItem = new JMenuItem("Load"));
-        menu.add(closeItem = new JMenuItem("Close"));
+        menu.add(saveItem = new JMenuItem(Constants.SAVE));
+        menu.add(saveAsItem = new JMenuItem(Constants.SAVE_AS));
+        menu.add(loadItem = new JMenuItem(Constants.LOAD));
+        menu.add(closeItem = new JMenuItem(Constants.EXIT));
         saveItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -61,8 +60,8 @@ public class Window extends JFrame{ //starting window
             @Override
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(getGlassPane(),"Loading media");
-                media.setMovies(LoadToFile.deserialiseMovies());
-                media.setShows(LoadToFile.deserialiseShows());
+                media.setMovies(LoadFromFile.deserialiseMovies());
+                media.setShows(LoadFromFile.deserialiseShows());
 
             }
         });

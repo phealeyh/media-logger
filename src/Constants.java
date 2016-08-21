@@ -12,4 +12,9 @@ public class Constants {
     public static final String TOGGLING_MOVIES = "* Currently toggling a list of your movies";
     public static final String TOGGLING_SHOWS = "* Currently toggling a list of your shows";
     public static final String PROGRAM_NAME = "Kevin's Media Database";
+    public static final String MENU = "My Menu";
+    public static final String SAVE = "Save";
+    public static final String SAVE_AS = "Save As";
+    public static final String LOAD = "Load";
+    public static final String EXIT = "Close";
 }

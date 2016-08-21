@@ -11,7 +11,7 @@ import java.io.ObjectInputStream;
 /**
  * Created by tranc on 21/08/2016.
  */
-public class LoadToFile {
+public class LoadFromFile {
 
     public static Movies deserialiseMovies(){
         Movies movies = null;
