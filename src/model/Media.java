@@ -1,6 +1,9 @@
 package model;
 
 
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
+import javafx.fxml.LoadException;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -20,31 +23,7 @@ public class Media implements Serializable{
     public Media(){
         movies = new Movies();
         shows = new Shows();
-        try{
-            load();
-        } catch(Exception e){
-            e.printStackTrace();
-        }
-        //movies and shows are both initialised
     }
-
-    public void load() throws IOException, ClassNotFoundException {
-        ObjectInputStream ois = null;
-        try {
-            FileInputStream fis = new FileInputStream(fileName);
-            ois = new ObjectInputStream(fis);
-            movies = (Movies) ois.readObject();
-            shows = (Shows) ois.readObject();
-        } catch (IOException e) {
-            movies = new Movies();
-            shows = new Shows();
-        } finally {
-            if (ois != null){
-                ois.close();
-            }
-        }
-    }
-
 
 
 
