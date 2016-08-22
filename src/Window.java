@@ -16,6 +16,8 @@ public class Window extends JFrame{ //starting window
     private JMenuBar menuBar;
     /* Menu */
     private JMenu menu;
+    /* Panel containing the left and right panels */
+    private Panel myPanel;
 
     public Window(){
         media = new Media();
@@ -60,6 +62,7 @@ public class Window extends JFrame{ //starting window
                 JOptionPane.showMessageDialog(getGlassPane(),"Loading media");
                 media.setMovies(LoadFromFile.deserialiseMedia().movies());
                 media.setShows(LoadFromFile.deserialiseMedia().shows());
+                myPanel.rightPanel().update();
 
             }
         });
@@ -77,13 +80,15 @@ public class Window extends JFrame{ //starting window
     }
 
     private void build(){
-        add(new Panel());
+        add(myPanel = new Panel());
     }
 
     private class Panel extends JPanel{ //starting panel
 
+        private RightPanel rightPanel;
+        private LeftPanel leftPanel;
 
-        public Panel(){
+        private Panel(){
             setup();
             build();
         }
@@ -93,10 +98,18 @@ public class Window extends JFrame{ //starting window
         }
 
         private void build(){
-            RightPanel rightPanel = new RightPanel(media);
-            LeftPanel leftPanel = new LeftPanel(rightPanel);
+            rightPanel = new RightPanel(media);
+            leftPanel = new LeftPanel(rightPanel);
             add(leftPanel);
             add(rightPanel);
+        }
+
+        private RightPanel rightPanel(){
+            return rightPanel;
+        }
+
+        private LeftPanel leftPanel(){
+            return leftPanel;
         }
     }
 
