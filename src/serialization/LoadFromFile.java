@@ -1,7 +1,9 @@
 package serialization;
 
-import model.Movies;
-import model.Shows;
+
+
+
+import model.Media;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -13,13 +15,13 @@ import java.io.ObjectInputStream;
  */
 public class LoadFromFile {
 
-    public static Movies deserialiseMovies(){
-        Movies movies = null;
+    public static Media deserialiseMedia(){
+        Media media = null;
         try
         {
-            FileInputStream fileIn = new FileInputStream("C:/Users/tranc/Desktop/Resume/movies.ser");
+            FileInputStream fileIn = new FileInputStream("C:/Users/tranc/Desktop/Resume/media.ser");
             ObjectInputStream in = new ObjectInputStream(fileIn);
-            movies = (Movies) in.readObject();
+            media = (Media) in.readObject();
             in.close();
             fileIn.close();
         }catch(IOException i)
@@ -27,33 +29,12 @@ public class LoadFromFile {
             i.printStackTrace();
         }catch(ClassNotFoundException c)
         {
-            System.out.println("Employee class not found");
+            System.out.println("Media not found");
             c.printStackTrace();
         }
-        return movies;
+        return media;
 
     }
 
-    public static Shows deserialiseShows(){
-        Shows shows = null;
-        try
-        {
-            FileInputStream fileIn = new FileInputStream("C:/Users/tranc/Desktop/Resume/shows.ser");
-            ObjectInputStream in = new ObjectInputStream(fileIn);
-            shows = (Shows) in.readObject();
-            in.close();
-            fileIn.close();
-        }catch(IOException i)
-        {
-            i.printStackTrace();
-        }catch(ClassNotFoundException c)
-        {
-            System.out.println("Employee class not found");
-            c.printStackTrace();
-        }
-        return shows;
-
-
-    }
 
 }

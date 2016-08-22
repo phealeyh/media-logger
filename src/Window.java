@@ -51,16 +51,15 @@ public class Window extends JFrame{ //starting window
             @Override
             public void actionPerformed(ActionEvent e) {
                 //Save file
-                WriteToFile.serialiseMovies(media.movies());
-                WriteToFile.serialiseShows(media.shows());
+                WriteToFile.serialiseMedia(media);
             }
         });
         loadItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(getGlassPane(),"Loading media");
-                media.setMovies(LoadFromFile.deserialiseMovies());
-                media.setShows(LoadFromFile.deserialiseShows());
+                media.setMovies(LoadFromFile.deserialiseMedia().movies());
+                media.setShows(LoadFromFile.deserialiseMedia().shows());
 
             }
         });

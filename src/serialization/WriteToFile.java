@@ -1,5 +1,6 @@
 package serialization;
 
+import model.Media;
 import model.Movies;
 import model.Shows;
 
@@ -12,39 +13,23 @@ import java.io.ObjectOutputStream;
  */
 public class WriteToFile {
 
-    public static void serialiseMovies(Movies movies){
+    public static void serialiseMedia(Media media){
         try
         {
             FileOutputStream fileOut =
-                    new FileOutputStream("C:/Users/tranc/Desktop/Resume/movies.ser");
+                    new FileOutputStream("C:/Users/tranc/Desktop/Resume/media.ser");
             ObjectOutputStream out = new ObjectOutputStream(fileOut);
-            out.writeObject(movies);
+            out.writeObject(media);
             out.close();
             fileOut.close();
-            System.out.println("Serialized data is saved in C:/Users/tranc/Desktop/Resume/movies.ser");
+            System.out.println("Serialized data is saved in C:/Users/tranc/Desktop/Resume/media.ser");
         }catch(IOException i)
         {
             i.printStackTrace();
         }
-
     }
 
-    public static void serialiseShows(Shows shows){
-        try
-        {
-            FileOutputStream fileOut =
-                    new FileOutputStream("C:/Users/tranc/Desktop/Resume/shows.ser");
-            ObjectOutputStream out = new ObjectOutputStream(fileOut);
-            out.writeObject(shows);
-            out.close();
-            fileOut.close();
-            System.out.println("Serialized data is saved in C:/Users/tranc/Desktop/Resume/shows.ser");
-        }catch(IOException i)
-        {
-            i.printStackTrace();
-        }
 
-    }
 
 
 }
