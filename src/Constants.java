@@ -1,4 +1,4 @@
-
+/* Static Helper Class */
 public class Constants {
 
     public static final String MOVIE  = "Movie";

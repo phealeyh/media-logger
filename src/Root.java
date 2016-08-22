@@ -3,7 +3,7 @@
 public class Root {
 
     public static void main(String[] args){
-        new Window();
+        new Window();;
     }
 
 }
