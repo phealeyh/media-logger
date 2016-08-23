@@ -17,8 +17,6 @@ public class Media implements Serializable{
     private Movies movies;
     /* Shows object */
     private Shows shows;
-    /* String of the filename */
-    private String fileName;
 
     public Media(){
         movies = new Movies();
