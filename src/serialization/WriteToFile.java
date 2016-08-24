@@ -13,16 +13,16 @@ import java.io.ObjectOutputStream;
  */
 public class WriteToFile {
 
-    public static void serialiseMedia(Media media){
+    public static void serialiseMedia(Media media, String directory){
         try
         {
             FileOutputStream fileOut =
-                    new FileOutputStream("C:/Users/tranc/Desktop/Resume/media.ser");
+                    new FileOutputStream(directory);
             ObjectOutputStream out = new ObjectOutputStream(fileOut);
             out.writeObject(media);
             out.close();
             fileOut.close();
-            System.out.println("Serialized data is saved in C:/Users/tranc/Desktop/Resume/media.ser");
+            System.out.println("Serialized data is saved in " + directory);
         }catch(IOException i)
         {
             i.printStackTrace();

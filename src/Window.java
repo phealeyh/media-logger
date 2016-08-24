@@ -1,4 +1,5 @@
 
+import components.FileChooser;
 import model.Media;
 import serialization.LoadFromFile;
 import serialization.WriteToFile;
@@ -18,6 +19,8 @@ public class Window extends JFrame{ //starting window
     private JMenu menu;
     /* Panel containing the left and right panels */
     private Panel myPanel;
+    /* FileChooser dialogs along with save and load locations */
+    private FileChooser fc;
 
     public Window(){
         media = new Media();
@@ -38,30 +41,23 @@ public class Window extends JFrame{ //starting window
     private void setMenuOptions(){
 
         menu = new JMenu(Constants.MENU);
-        JMenuItem saveItem, saveAsItem, loadItem, closeItem;
-        menu.add(saveItem = new JMenuItem(Constants.SAVE));
+        JMenuItem saveAsItem, loadItem, closeItem;
         menu.add(saveAsItem = new JMenuItem(Constants.SAVE_AS));
         menu.add(loadItem = new JMenuItem(Constants.LOAD));
         menu.add(closeItem = new JMenuItem(Constants.EXIT));
-        saveItem.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(getGlassPane(), "Saving Media");
-            }
-        });
         saveAsItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //Save file
-                WriteToFile.serialiseMedia(media);
+                fc.saveFileDialog();
+                WriteToFile.serialiseMedia(media,fc.getSaveLocation());
             }
         });
         loadItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(getGlassPane(),"Loading media");
-                media.setMovies(LoadFromFile.deserialiseMedia().movies());
-                media.setShows(LoadFromFile.deserialiseMedia().shows());
+                fc.loadFileDialog();
+                media.setMovies(LoadFromFile.deserialiseMedia(fc.getLoadLocation()).movies());
+                media.setShows(LoadFromFile.deserialiseMedia(fc.getLoadLocation()).shows());
                 myPanel.rightPanel().update();
 
             }
@@ -80,8 +76,11 @@ public class Window extends JFrame{ //starting window
     }
 
     private void build(){
+        fc = new FileChooser(getGlassPane());
         add(myPanel = new Panel());
     }
+
+    /* Private class that includes both the left and right panel */
 
     private class Panel extends JPanel{ //starting panel
 
