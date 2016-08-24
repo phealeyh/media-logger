@@ -16,6 +16,11 @@ public class FileChooser extends JFileChooser{
     private String saveLocation, loadLocation;
 
 
+    public FileChooser() {
+        super();
+
+    }
+
 
     public FileChooser(Component component){
         this.component = component;
@@ -59,9 +64,5 @@ public class FileChooser extends JFileChooser{
         this.saveLocation = saveLocation;
     }
 
-    public FileChooser() {
-        super();
-
-    }
 
 }
