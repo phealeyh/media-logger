@@ -15,11 +15,11 @@ import java.io.ObjectInputStream;
  */
 public class LoadFromFile {
 
-    public static Media deserialiseMedia(){
+    public static Media deserialiseMedia(String directory){
         Media media = null;
         try
         {
-            FileInputStream fileIn = new FileInputStream("C:/Users/tranc/Desktop/Resume/media.ser");
+            FileInputStream fileIn = new FileInputStream(directory);
             ObjectInputStream in = new ObjectInputStream(fileIn);
             media = (Media) in.readObject();
             in.close();
