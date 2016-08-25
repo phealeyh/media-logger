@@ -1,5 +1,10 @@
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
+
 import javax.swing.*;
 import java.awt.*;
+import java.io.IOException;
 
 
 public class MediaWindow extends JFrame {
@@ -12,7 +17,9 @@ public class MediaWindow extends JFrame {
 
     public MediaWindow(String mediaName){
         this.mediaName = mediaName;
+        //define dimensions
         setup();
+        //attach panel and add any additional components
         build();
         pack();
         setVisible(true);
@@ -32,6 +39,7 @@ public class MediaWindow extends JFrame {
 
 
     private class MediaPanel extends JPanel {
+
         public MediaPanel(){
             setup();
             build();
@@ -40,11 +48,19 @@ public class MediaWindow extends JFrame {
         private void setup(){
             setBackground(Color.WHITE);
             setLayout(borderLayout = new BorderLayout());
+            setBorder(BorderFactory.createLineBorder(Color.BLACK));
         }
 
         private void build(){
-            setBorder(BorderFactory.createLineBorder(Color.BLACK));
+            Box box = Box.createVerticalBox();
+            box.add(new JLabel(Constants.TITLE));
+            box.add(new JLabel(Constants.MAIN_ACTOR));
+            box.add(new JLabel(Constants.PLOT));
+            add(box,BorderLayout.NORTH);
+            //show label
+
         }
+
 
     }
 

@@ -17,4 +17,9 @@ public class Constants {
     public static final String SAVE_AS = "Save As";
     public static final String LOAD = "Load";
     public static final String EXIT = "Close";
+    public static final int SEPERATION = 5;
+
+    public static final String TITLE = "Title";
+    public static final String MAIN_ACTOR = "Main Actor";
+    public static final String PLOT = "Plot";
 }
