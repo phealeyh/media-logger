@@ -1,14 +1,8 @@
 import javax.swing.*;
 import javax.swing.JTextField;
-
-import model.Media;
-
-import java.awt.*;
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-
 public class LeftPanel extends JPanel{
     /* Private Instance Variables */
     /* Right Panel */
@@ -44,7 +38,7 @@ public class LeftPanel extends JPanel{
     }
 
     /* Method: build
-     * --------------
+     * ----------------
      * This method will basically create 1 veritcal box and 2 horizontal boxes
      * They will be used to store the buttons, text fields and labels
      * The boxes will then be added to the panel.
@@ -125,7 +119,7 @@ public class LeftPanel extends JPanel{
                 //Show only list of movies through the right panel
             }
             setListLabel();
-        } //end method
+        }
 
         private void setListLabel(){
             if(rightPanel.movieListSelected()){
