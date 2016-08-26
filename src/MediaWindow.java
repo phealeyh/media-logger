@@ -1,10 +1,10 @@
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.select.Elements;
+
+import com.omertron.themoviedbapi.AppendToResponseBuilder;
 
 import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
+import java.net.MalformedURLException;
 
 
 public class MediaWindow extends JFrame {
@@ -40,29 +40,29 @@ public class MediaWindow extends JFrame {
 
     private class MediaPanel extends JPanel {
 
-        public MediaPanel(){
+        public MediaPanel() {
             setup();
             build();
         }
 
-        private void setup(){
+        private void setup() {
             setBackground(Color.WHITE);
             setLayout(borderLayout = new BorderLayout());
             setBorder(BorderFactory.createLineBorder(Color.BLACK));
         }
 
-        private void build(){
+        private void build() {
             Box box = Box.createVerticalBox();
             box.add(new JLabel(Constants.TITLE));
             box.add(new JLabel(Constants.MAIN_ACTOR));
             box.add(new JLabel(Constants.PLOT));
-            add(box,BorderLayout.NORTH);
-            //show label
+            AppendToResponseBuilder rp;
+            add(box, BorderLayout.NORTH);
 
         }
-
-
     }
+
+
 
 
 

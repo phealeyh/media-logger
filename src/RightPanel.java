@@ -5,7 +5,6 @@ import java.awt.*;
 import java.util.LinkedList;
 
 import model.*;
-import org.jsoup.Jsoup;
 
 public class RightPanel extends JPanel implements View{
 

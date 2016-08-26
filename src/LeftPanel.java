@@ -119,7 +119,7 @@ public class LeftPanel extends JPanel{
                 //Show only list of movies through the right panel
             }
             setListLabel();
-        } //end method
+        }
 
         private void setListLabel(){
             if(rightPanel.movieListSelected()){

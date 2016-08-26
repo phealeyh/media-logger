@@ -1,8 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0838c171-16de-4c1a-8ae6-0118f211333b" name="Default" comment="">
+    <list default="true" id="0838c171-16de-4c1a-8ae6-0118f211333b" name="Default" comment="added api with maven">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/.gitattributes" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/JacksonReplacement/JsonAnySetter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/JacksonReplacement/JsonProperty.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/JacksonReplacement/JsonRootName.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/JacksonReplacement/ObjectMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/JacksonReplacement/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/LICENCE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/AppendToResponseBuilder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/Compare.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/MovieDbException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/TheMovieDbApi.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/enumeration/ArtworkType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/enumeration/CreditType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/enumeration/ExternalSource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/enumeration/MediaType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/enumeration/MovieMethod.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/enumeration/PeopleMethod.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/enumeration/SearchType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/enumeration/SortBy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/enumeration/TVEpisodeMethod.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/enumeration/TVMethod.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/enumeration/TVSeasonMethod.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/interfaces/AppendToResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/interfaces/AppendToResponseMethod.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/interfaces/Identification.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/interfaces/WrapperDates.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/interfaces/WrapperPages.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/methods/AbstractMethod.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/methods/TmdbAccount.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/methods/TmdbAuthentication.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/methods/TmdbCertifications.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/methods/TmdbChanges.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/methods/TmdbCollections.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/methods/TmdbCompanies.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/methods/TmdbConfiguration.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/methods/TmdbCredits.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/methods/TmdbDiscover.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/methods/TmdbEpisodes.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/methods/TmdbFind.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/methods/TmdbGenres.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/methods/TmdbKeywords.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/methods/TmdbLists.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/methods/TmdbMovies.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/methods/TmdbNetworks.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/methods/TmdbPeople.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/methods/TmdbReviews.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/methods/TmdbSearch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/methods/TmdbSeasons.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/methods/TmdbTV.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/AbstractIdName.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/AbstractJsonMapping.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/Certification.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/FindResults.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/Genre.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/Language.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/StatusCode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/account/Account.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/account/Avatar.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/account/AvatarHash.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/artwork/Artwork.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/artwork/ArtworkMedia.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/authentication/TokenAuthorisation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/authentication/TokenSession.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/change/ChangeKeyItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/change/ChangeListItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/change/ChangedItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/collection/Collection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/collection/CollectionInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/company/Company.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/config/Configuration.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/config/JobDepartment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/credits/CreditBasic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/credits/CreditMovieBasic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/credits/CreditTVBasic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/credits/MediaCredit.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/credits/MediaCreditCast.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/credits/MediaCreditCrew.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/discover/Discover.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/discover/WithBuilder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/keyword/Keyword.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/list/ListItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/list/ListItemStatus.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/list/ListStatusCode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/list/UserList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/media/AlternativeTitle.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/media/MediaBasic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/media/MediaCreditList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/media/MediaState.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/media/RatedValue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/media/Trailer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/media/Translation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/media/Video.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/movie/MovieBasic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/movie/MovieInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/movie/ProductionCompany.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/movie/ProductionCountry.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/movie/ReleaseInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/network/Network.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/person/ContentRating.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/person/CreditInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/person/ExternalID.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/person/PersonBasic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/person/PersonCreditList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/person/PersonCreditsMixIn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/person/PersonFind.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/person/PersonInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/review/Review.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/tv/TVBasic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/tv/TVCredit.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/tv/TVEpisodeBasic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/tv/TVEpisodeInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/tv/TVInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/tv/TVSeasonBasic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/model/tv/TVSeasonInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/results/AbstractWrapperAll.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/results/AbstractWrapperBase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/results/AbstractWrapperId.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/results/AbstractWrapperIdPages.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/results/ResultDates.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/results/ResultList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/results/ResultsMap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/results/WrapperAlternativeTitles.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/results/WrapperChanges.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/results/WrapperConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/results/WrapperGenericList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/results/WrapperGenres.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/results/WrapperImages.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/results/WrapperJobList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/results/WrapperMovieKeywords.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/results/WrapperMultiSearch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/results/WrapperReleaseInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/results/WrapperTranslations.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/results/WrapperVideos.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/tools/ApiUrl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/tools/HttpTools.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/tools/MethodBase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/tools/MethodSub.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/tools/Param.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/tools/PostBody.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/tools/PostTools.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/tools/TmdbParameters.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/resources/bin.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/main/resources/version.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/AbstractTests.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/ArtworkResults.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/CompareTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/TestID.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/TestLogger.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/TestSuite.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/methods/TmdbAccountTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/methods/TmdbAuthenticationTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/methods/TmdbCertificationsTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/methods/TmdbChangesTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/methods/TmdbCollectionsTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/methods/TmdbCompaniesTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/methods/TmdbConfigurationTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/methods/TmdbCreditsTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/methods/TmdbDiscoverTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/methods/TmdbEpisodesTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/methods/TmdbFindTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/methods/TmdbGenresTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/methods/TmdbKeywordsTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/methods/TmdbListsTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/methods/TmdbMoviesTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/methods/TmdbNetworksTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/methods/TmdbPeopleTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/methods/TmdbReviewsTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/methods/TmdbSearchTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/methods/TmdbSeasonsTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/methods/TmdbTVTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/src/test/java/com/omertron/themoviedbapi/tools/ApiUrlTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/api-themoviedb-master/themoviedbapi.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Constants.java" afterPath="$PROJECT_DIR$/src/Constants.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LeftPanel.java" afterPath="$PROJECT_DIR$/src/LeftPanel.java" />
@@ -13,6 +190,7 @@
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="$PROJECT_DIR$/lib/api-themoviedb-master/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +212,8 @@
           <file leaf-file-name="Window.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Window.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="334">
-                  <caret line="34" column="19" selection-start-line="34" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+                <state relative-caret-position="1258">
+                  <caret line="82" column="54" selection-start-line="82" selection-start-column="54" selection-end-line="82" selection-end-column="54" />
                   <folding />
                 </state>
               </provider>
@@ -44,39 +222,11 @@
           <file leaf-file-name="MediaWindow.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/MediaWindow.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="763">
-                  <caret line="54" column="45" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#771#772#0" expanded="true" />
-                    <element signature="e#807#808#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="LeftPanel.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/LeftPanel.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
+                <state relative-caret-position="935">
+                  <caret line="57" column="43" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Box.java" pinned="false" current-in-tab="false">
-            <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/javax/swing/Box.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="362">
-                  <caret line="186" column="28" selection-start-line="186" selection-start-column="28" selection-end-line="186" selection-end-column="28" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -84,9 +234,45 @@
           <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Constants.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+                <state relative-caret-position="408">
+                  <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Constants.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LeftPanel.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/LeftPanel.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="408">
+                  <caret line="28" column="42" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="42" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="RightPanel.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/RightPanel.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -116,9 +302,11 @@
         <option value="$PROJECT_DIR$/src/com/omertron/themoviedbapi/enumeration/ArtworkType.java" />
         <option value="$PROJECT_DIR$/src/components/FileChooser.java" />
         <option value="$PROJECT_DIR$/lib/commons-lang3-3.4-src/src/main/java/org/apache/commons/lang3/AnnotationUtils.java" />
-        <option value="$PROJECT_DIR$/src/RightPanel.java" />
-        <option value="$PROJECT_DIR$/src/LeftPanel.java" />
+        <option value="$PROJECT_DIR$/src/model/Shows.java" />
+        <option value="$PROJECT_DIR$/src/model/Viewable.java" />
         <option value="$PROJECT_DIR$/src/Constants.java" />
+        <option value="$PROJECT_DIR$/src/LeftPanel.java" />
+        <option value="$PROJECT_DIR$/src/RightPanel.java" />
         <option value="$PROJECT_DIR$/src/MediaWindow.java" />
       </list>
     </option>
@@ -128,6 +316,23 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -160,9 +365,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -181,20 +383,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsoup-1.9.2.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="media-logger" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="media-logger" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -223,16 +411,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -240,10 +427,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="C:/Program Files/Java/jdk1.7.0_79/jre/lib/ext/jsoup-1.9.2-javadoc.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/api-themoviedb-master" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="media-logger" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -704,30 +895,41 @@
       <workItem from="1472102648077" duration="522000" />
       <workItem from="1472103182641" duration="606000" />
       <workItem from="1472103814210" duration="585000" />
-      <workItem from="1472113787651" duration="6100000" />
+      <workItem from="1472113787651" duration="8558000" />
+      <workItem from="1472171742892" duration="192000" />
+      <workItem from="1472180963328" duration="698000" />
+      <workItem from="1472191751339" duration="1864000" />
+      <workItem from="1472194539833" duration="532000" />
     </task>
+    <task id="LOCAL-00001" summary="created boxes to structure the position of the text for the media window">
+      <created>1472120583296</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1472120583296</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14965000" />
+    <option name="totallyTimeSpent" value="20709000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1576" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34932956" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298217" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19407198" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33227345" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19336626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32883522" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19435611" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19316375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298217" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.121224165" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959481" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -738,6 +940,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34895313" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956952" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -753,6 +956,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="created boxes to structure the position of the text for the media window" />
+    <option name="LAST_COMMIT_MESSAGE" value="created boxes to structure the position of the text for the media window" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -762,93 +969,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/serialization/LoadFromFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/serialization/WriteToFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Window.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/FileChooser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/serialization/LoadFromFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/serialization/WriteToFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Window.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/FileChooser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/serialization/LoadFromFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/serialization/WriteToFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Window.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/FileChooser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -878,7 +1002,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -908,7 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -963,126 +1085,112 @@
     <entry file="file://$PROJECT_DIR$/src/com/omertron/themoviedbapi/enumeration/ArtworkType.java" />
     <entry file="file://$PROJECT_DIR$/src/org.apache.commons.lang3/src/main/java/org/apache/commons/lang3/exception/CloneFailedException.java" />
     <entry file="file://$PROJECT_DIR$/src/org.apache.commons.lang3/src/main/java/org/apache/commons/lang3/AnnotationUtils.java" />
-    <entry file="file://$PROJECT_DIR$/lib/commons-lang3-3.4-src/src/main/java/org/apache/commons/lang3/AnnotationUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RightPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/javax/swing/JTextArea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="472" column="16" selection-start-line="472" selection-start-column="16" selection-end-line="472" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/rt.jar!/sun/net/www/http/HttpClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="380" column="0" selection-start-line="380" selection-start-column="0" selection-end-line="380" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/commons-lang3-3.4-src/src/main/java/org/apache/commons/lang3/AnnotationUtils.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/javax/swing/JTextArea.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/rt.jar!/sun/net/www/http/HttpClient.class" />
     <entry file="file://$PROJECT_DIR$/src/components/FileChooser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/javax/swing/JTextField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1034">
-          <caret line="215" column="62" selection-start-line="215" selection-start-column="62" selection-end-line="215" selection-end-column="62" />
-          <folding>
-            <element signature="e#7520#7521#0" expanded="false" />
-            <element signature="e#7561#7562#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/ext/jsoup-1.9.2.jar!/org/jsoup/Connection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/ext/jsoup-1.9.2.jar!/org/jsoup/HttpStatusException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/javax/swing/JTextField.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/ext/jsoup-1.9.2.jar!/org/jsoup/HttpStatusException.class" />
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/javax/swing/JFrame.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/awt/Container.java" />
     <entry file="file://$PROJECT_DIR$/src/model/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/javax/swing/JFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/model/Movies.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1159">
-          <caret line="382" column="16" selection-start-line="382" selection-start-column="16" selection-end-line="382" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/awt/Container.java">
+    <entry file="file://$PROJECT_DIR$/src/model/Show.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="3818" column="39" selection-start-line="3818" selection-start-column="31" selection-end-line="3818" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Shows.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Viewable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/javax/swing/Box.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/ext/jsoup-1.9.2.jar!/org/jsoup/parser/Parser.class" />
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/ext/jsoup-1.9.2.jar!/org/jsoup/nodes/Element.class" />
     <entry file="file://$PROJECT_DIR$/src/Window.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="34" column="19" selection-start-line="34" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="1258">
+          <caret line="82" column="54" selection-start-line="82" selection-start-column="54" selection-end-line="82" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="408">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/javax/swing/Box.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="186" column="28" selection-start-line="186" selection-start-column="28" selection-end-line="186" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/ext/jsoup-1.9.2.jar!/org/jsoup/nodes/Document.class" />
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/ext/jsoup-1.9.2.jar!/org/jsoup/Connection.class" />
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/ext/jsoup-1.9.2.jar!/org/jsoup/Jsoup.class" />
     <entry file="file://$PROJECT_DIR$/src/LeftPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
+        <state relative-caret-position="408">
+          <caret line="28" column="42" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/AppendToResponseBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/Compare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RightPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1091,12 +1199,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MediaWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="763">
-          <caret line="54" column="45" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
+        <state relative-caret-position="935">
+          <caret line="57" column="43" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#807#808#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1159,6 +1265,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
