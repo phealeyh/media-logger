@@ -1,8 +1,6 @@
 package serialization;
 
 import model.Media;
-import model.Movies;
-import model.Shows;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
