@@ -19,7 +19,7 @@ public class Constants {
     public static final String EXIT = "Close";
     public static final String KEY = "f139f902e457606b435a8799a1e44a6a";
     public static final String TITLE = "Title:";
-    public static final String MAIN_ACTOR = "Main Actor:";
+    public static final String TAG = "Tag:";
     public static final String PLOT = "Plot:";
     public static final String TMDB_LINK = "https://api.themoviedb.org/3/movie/550?api_key=";
 }
