@@ -3,11 +3,12 @@
 import info.movito.themoviedbapi.TmdbApi;
 import info.movito.themoviedbapi.TmdbFind;
 import info.movito.themoviedbapi.TmdbMovies;
+import info.movito.themoviedbapi.TmdbSearch;
 import info.movito.themoviedbapi.model.MovieDb;
 
 import javax.swing.*;
 import java.awt.*;
-
+import java.util.List;
 
 public class MediaWindow extends JFrame {
     /* Private Instance Variables */
@@ -17,10 +18,12 @@ public class MediaWindow extends JFrame {
     private BorderLayout borderLayout;
     private TmdbMovies movies;
     private MovieDb movie;
+    private List<MovieDb> results;
 
     public MediaWindow(String mediaName){
         //fight club movie
-        movie = new TmdbApi(Constants.KEY).getMovies().getMovie(550,"en");
+        results = new TmdbApi(Constants.KEY).getSearch().searchMovie("The Terminator",0,null,false,0).getResults();
+        movie = results.get(0);
         this.mediaName = mediaName;
         //define dimensions
         setup();
@@ -66,15 +69,17 @@ public class MediaWindow extends JFrame {
             //add title information here
             box.add(new JLabel(Constants.TITLE + " " + movie.getTitle()));
             //add main actor information here
-            box.add(new JLabel(Constants.MAIN_ACTOR));
+            box.add(new JLabel(Constants.TAG));
+            box.add(new JLabel(movie.getTagline()));
             //add plot information here
             box.add(new JLabel(Constants.PLOT));
-            box.add(new JLabel(movie.getImdbID()));
+            //first part of the plot
+            box.add((new JLabel(movie.getOverview())));
+            //this will keep adding a new box for every sentence there is
             add(box, BorderLayout.NORTH);
 
         }
     }
-
 
 
 
