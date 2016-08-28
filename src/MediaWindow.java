@@ -1,14 +1,10 @@
 
 
 import info.movito.themoviedbapi.TmdbApi;
-import info.movito.themoviedbapi.TmdbFind;
-import info.movito.themoviedbapi.TmdbMovies;
-import info.movito.themoviedbapi.TmdbSearch;
 import info.movito.themoviedbapi.model.MovieDb;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.List;
 
 public class MediaWindow extends JFrame {
     /* Private Instance Variables */
@@ -16,14 +12,12 @@ public class MediaWindow extends JFrame {
     private String mediaName;
     /* Border Layout */
     private BorderLayout borderLayout;
-    private TmdbMovies movies;
     private MovieDb movie;
-    private List<MovieDb> results;
 
     public MediaWindow(String mediaName){
-        //fight club movie
-        results = new TmdbApi(Constants.KEY).getSearch().searchMovie("The Terminator",0,null,false,0).getResults();
-        movie = results.get(0);
+        //get first query from the list
+        movie = new TmdbApi(Constants.KEY).getSearch().
+                searchMovie(mediaName,0,null,false,0).getResults().get(0);
         this.mediaName = mediaName;
         //define dimensions
         setup();
@@ -35,7 +29,7 @@ public class MediaWindow extends JFrame {
 
     private void setup(){
         setTitle(mediaName);
-        setPreferredSize(new Dimension(400, 450));
+        setPreferredSize(new Dimension(500, 450));
         setLocation(1100,500);
     }
 
@@ -47,9 +41,8 @@ public class MediaWindow extends JFrame {
 
 
     private class MediaPanel extends JPanel {
-        String title, mainActor, plot;
 
-        public MediaPanel() {
+        private MediaPanel() {
             setup();
             build();
         }
@@ -67,21 +60,25 @@ public class MediaWindow extends JFrame {
         private void build(){
             Box box = Box.createVerticalBox();
             //add title information here
-            box.add(new JLabel(Constants.TITLE + " " + movie.getTitle()));
-            //add main actor information here
-            box.add(new JLabel(Constants.TAG));
-            box.add(new JLabel(movie.getTagline()));
+            JLabel title = new JLabel(Constants.TITLE + " " + movie.getTitle());
+            title.setFont(title.getFont().deriveFont(18.0f));
+            box.add(title);
+            JLabel plot = new JLabel(Constants.PLOT);
             //add plot information here
-            box.add(new JLabel(Constants.PLOT));
+            box.add(plot);
             //first part of the plot
-            box.add((new JLabel(movie.getOverview())));
-            //this will keep adding a new box for every sentence there is
+            String strings[] = movie.getOverview().split("\\. ");
+            for(int i = 0; i < strings.length - 1; i++){
+                JLabel label = new JLabel(strings[i] + ".");
+                label.setFont(label.getFont().deriveFont(10.0f));
+                box.add(label);
+
+             }
             add(box, BorderLayout.NORTH);
-
         }
+
+
     }
-
-
 
 
 }
