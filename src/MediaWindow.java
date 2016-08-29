@@ -69,20 +69,20 @@ public class MediaWindow extends JFrame {
 
             //first part of the plot
             String strings[] = movie.getOverview().split(" ");
-            int count = 1;
+            int count = 0;
             String text = "";
-            for(int i = 0; i < strings.length - 1; i++){
+            for(int i = 0; i < strings.length; i++){
                 text += strings[i] + " ";
                 JLabel label = new JLabel(text);
-                if(count == 12){
+                if(count == 11){
                     label.setText(label.getText());
-                    count = 1;
+                    count = 0;
                     label.setFont(label.getFont().deriveFont(10.0f));
                     text = "";
                     box.add(label);
                 }
-                if(i == (strings.length - 2)){
-                    label.setText(text + ".");
+                if(i == (strings.length - 1)){
+                    label.setText(text);
                     label.setFont(label.getFont().deriveFont(10.0f));
                     box.add(label);
                 }
