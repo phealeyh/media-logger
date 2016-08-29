@@ -3,7 +3,7 @@ package model;
 import java.util.LinkedList;
 
 
-public class Viewable {
+public class Viewable{
     private LinkedList<View> views = new LinkedList<View>();
 
     public void attach(View view){
@@ -15,6 +15,7 @@ public class Viewable {
             view.update(); //updates each view panel
         }
     }
+
 
     public void detach(View targetView){
         for(View view: views){
