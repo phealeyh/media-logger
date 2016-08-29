@@ -66,13 +66,27 @@ public class MediaWindow extends JFrame {
             JLabel plot = new JLabel(Constants.PLOT);
             //add plot information here
             box.add(plot);
-            //first part of the plot
-            String strings[] = movie.getOverview().split("\\. ");
-            for(int i = 0; i < strings.length - 1; i++){
-                JLabel label = new JLabel(strings[i] + ".");
-                label.setFont(label.getFont().deriveFont(10.0f));
-                box.add(label);
 
+            //first part of the plot
+            String strings[] = movie.getOverview().split(" ");
+            int count = 1;
+            String text = "";
+            for(int i = 0; i < strings.length - 1; i++){
+                text += strings[i] + " ";
+                JLabel label = new JLabel(text);
+                if(count == 12){
+                    label.setText(label.getText());
+                    count = 1;
+                    label.setFont(label.getFont().deriveFont(10.0f));
+                    text = "";
+                    box.add(label);
+                }
+                if(i == (strings.length - 2)){
+                    label.setText(text + ".");
+                    label.setFont(label.getFont().deriveFont(10.0f));
+                    box.add(label);
+                }
+                count++;
              }
             add(box, BorderLayout.NORTH);
         }
