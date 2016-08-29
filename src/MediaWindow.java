@@ -52,7 +52,6 @@ public class MediaWindow extends JFrame {
 
         private void setup() {
             setBackground(Color.WHITE);
-
             setLayout(borderLayout = new BorderLayout());
             setBorder(BorderFactory.createLineBorder(Color.BLACK));
         }
@@ -66,9 +65,25 @@ public class MediaWindow extends JFrame {
             JLabel plot = new JLabel(Constants.PLOT);
             //add plot information here
             box.add(plot);
+            //add the overview of the plot
+            box = constructPlot(movie.getOverview().split(" "),box);
+            add(box, BorderLayout.NORTH);
+        }
 
-            //first part of the plot
-            String strings[] = movie.getOverview().split(" ");
+        /* Method: constructPlot
+         * -----------------------
+         * This method will be called to help construct
+         * the Jlabels in a readable format so that it doesn't
+         * span over the width of the window. It does this by controlling
+         * the amount of words that are going to be added by having a count variable
+         * that adds the appended sentences so far and resets the count variable and the
+         * appended string. When the final string of the array has been hit and the
+         * counter is less than 11, then it will add in whatever it has
+         * left in the appended string.
+         */
+
+
+        private Box constructPlot(String strings[], Box box){
             int count = 0;
             String text = "";
             for(int i = 0; i < strings.length; i++){
@@ -87,11 +102,9 @@ public class MediaWindow extends JFrame {
                     box.add(label);
                 }
                 count++;
-             }
-            add(box, BorderLayout.NORTH);
+            }
+            return box;
         }
-
-
     }
 
 
