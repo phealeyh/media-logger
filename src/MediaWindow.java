@@ -1,11 +1,10 @@
 
-import com.omertron.themoviedbapi.AppendToResponseBuilder;
+
+import info.movito.themoviedbapi.TmdbApi;
+import info.movito.themoviedbapi.model.MovieDb;
 
 import javax.swing.*;
 import java.awt.*;
-import java.io.IOException;
-import java.net.MalformedURLException;
-
 
 public class MediaWindow extends JFrame {
     /* Private Instance Variables */
@@ -13,9 +12,12 @@ public class MediaWindow extends JFrame {
     private String mediaName;
     /* Border Layout */
     private BorderLayout borderLayout;
-
+    private MovieDb movie;
 
     public MediaWindow(String mediaName){
+        //get first query from the list
+        movie = new TmdbApi(Constants.KEY).getSearch().
+                searchMovie(mediaName,0,null,false,0).getResults().get(0);
         this.mediaName = mediaName;
         //define dimensions
         setup();
@@ -27,12 +29,12 @@ public class MediaWindow extends JFrame {
 
     private void setup(){
         setTitle(mediaName);
+        setPreferredSize(new Dimension(500, 450));
         setLocation(1100,500);
-        setPreferredSize(new Dimension(600,500));
     }
 
     private void build(){
-       add(new MediaPanel());
+        add(new MediaPanel());
     }
 
 
@@ -40,30 +42,57 @@ public class MediaWindow extends JFrame {
 
     private class MediaPanel extends JPanel {
 
-        public MediaPanel() {
+        private MediaPanel() {
             setup();
             build();
         }
 
+
+
+
         private void setup() {
             setBackground(Color.WHITE);
+
             setLayout(borderLayout = new BorderLayout());
             setBorder(BorderFactory.createLineBorder(Color.BLACK));
         }
 
-        private void build() {
+        private void build(){
             Box box = Box.createVerticalBox();
-            box.add(new JLabel(Constants.TITLE));
-            box.add(new JLabel(Constants.MAIN_ACTOR));
-            box.add(new JLabel(Constants.PLOT));
-            AppendToResponseBuilder rp;
+            //add title information here
+            JLabel title = new JLabel(Constants.TITLE + " " + movie.getTitle());
+            title.setFont(title.getFont().deriveFont(18.0f));
+            box.add(title);
+            JLabel plot = new JLabel(Constants.PLOT);
+            //add plot information here
+            box.add(plot);
+
+            //first part of the plot
+            String strings[] = movie.getOverview().split(" ");
+            int count = 1;
+            String text = "";
+            for(int i = 0; i < strings.length - 1; i++){
+                text += strings[i] + " ";
+                JLabel label = new JLabel(text);
+                if(count == 12){
+                    label.setText(label.getText());
+                    count = 1;
+                    label.setFont(label.getFont().deriveFont(10.0f));
+                    text = "";
+                    box.add(label);
+                }
+                if(i == (strings.length - 2)){
+                    label.setText(text + ".");
+                    label.setFont(label.getFont().deriveFont(10.0f));
+                    box.add(label);
+                }
+                count++;
+             }
             add(box, BorderLayout.NORTH);
-
         }
+
+
     }
-
-
-
 
 
 }

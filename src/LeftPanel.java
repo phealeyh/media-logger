@@ -118,6 +118,7 @@ public class LeftPanel extends JPanel{
                 rightPanel.toggleMovies();
                 //Show only list of movies through the right panel
             }
+            rightPanel.update();
             setListLabel();
         }
 
