@@ -173,7 +173,7 @@
   
   <!-- Modules -->
   
-  <import file="${basedir}/lib/themoviedbapi/module_themoviedbapi.xml"/>
+  <import file="${basedir}/lib/themoviedbapi-master/module_themoviedbapi.xml"/>
   
   <import file="${basedir}/module_media-logger.xml"/>
   
@@ -198,14 +198,14 @@
     <jar destfile="${temp.jar.path.media-logger.jar}" duplicate="preserve" filesetmanifest="mergewithoutmain">
       <zipfileset dir="${media-logger.output.dir}"/>
       <zipfileset dir="${themoviedbapi.output.dir}"/>
+      <zipfileset src="${path.variable.maven_repository}/commons-codec/commons-codec/1.10/commons-codec-1.10.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/com/fasterxml/jackson/core/jackson-core/2.4.4/jackson-core-2.4.4.jar"/>
       <zipfileset src="${path.variable.maven_repository}/com/fasterxml/jackson/core/jackson-annotations/2.4.4/jackson-annotations-2.4.4.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/slf4j/jcl-over-slf4j/1.7.7/jcl-over-slf4j-1.7.7.jar"/>
+      <zipfileset src="${path.variable.maven_repository}/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar"/>
       <zipfileset src="${path.variable.maven_repository}/com/google/guava/guava/18.0/guava-18.0.jar"/>
       <zipfileset src="${path.variable.maven_repository}/com/fasterxml/jackson/core/jackson-databind/2.4.4/jackson-databind-2.4.4.jar"/>
-      <zipfileset src="${path.variable.maven_repository}/commons-codec/commons-codec/1.10/commons-codec-1.10.jar"/>
-      <zipfileset src="${path.variable.maven_repository}/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar"/>
-      <zipfileset src="${path.variable.maven_repository}/com/fasterxml/jackson/core/jackson-core/2.4.4/jackson-core-2.4.4.jar"/>
-      <zipfileset src="${path.variable.maven_repository}/org/slf4j/jcl-over-slf4j/1.7.7/jcl-over-slf4j-1.7.7.jar"/>
-      <zipfileset src="${path.variable.maven_repository}/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar"/>
     </jar>
     <copy file="${temp.jar.path.media-logger.jar}" tofile="${artifact.temp.output.media-logger:jar}/media-logger.jar"/>
   </target>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_themoviedbapi" default="compile.module.themoviedbapi">
+  <dirname property="module.themoviedbapi.basedir" file="${ant.file.module_themoviedbapi}"/>
+  
+  <property name="module.jdk.home.themoviedbapi" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.themoviedbapi" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.themoviedbapi" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.themoviedbapi" value="-encoding UTF-8 -source 1.6 -target 1.6 ${compiler.args}"/>
+  
+  <property name="themoviedbapi.output.dir" value="${module.themoviedbapi.basedir}/target/classes"/>
+  <property name="themoviedbapi.testoutput.dir" value="${module.themoviedbapi.basedir}/target/test-classes"/>
+  
+  <path id="themoviedbapi.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="themoviedbapi.module.production.classpath">
+    <path refid="${module.jdk.classpath.themoviedbapi}"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-core:2.4.4.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-annotations:2.4.4.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-databind:2.4.4.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.7.7.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-lang3:3.3.2.classpath"/>
+    <path refid="library.maven:_commons-codec:commons-codec:1.10.classpath"/>
+    <path refid="library.maven:_org.yamj:api-common:1.1.classpath"/>
+    <path refid="library.maven:_commons-dbcp:commons-dbcp:1.4.classpath"/>
+    <path refid="library.maven:_commons-pool:commons-pool:1.6.classpath"/>
+    <path refid="library.maven:_org.apache.httpcomponents:httpclient:4.2.6.classpath"/>
+    <path refid="library.maven:_org.apache.httpcomponents:httpcore:4.2.5.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.1.1.classpath"/>
+    <path refid="library.maven:_org.slf4j:jcl-over-slf4j:1.7.7.classpath"/>
+    <path refid="library.maven:_com.google.guava:guava:18.0.classpath"/>
+  </path>
+  
+  <path id="themoviedbapi.runtime.production.module.classpath">
+    <pathelement location="${themoviedbapi.output.dir}"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-core:2.4.4.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-annotations:2.4.4.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-databind:2.4.4.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.7.7.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-lang3:3.3.2.classpath"/>
+    <path refid="library.maven:_commons-codec:commons-codec:1.10.classpath"/>
+    <path refid="library.maven:_org.slf4j:jcl-over-slf4j:1.7.7.classpath"/>
+    <path refid="library.maven:_com.google.guava:guava:18.0.classpath"/>
+  </path>
+  
+  <path id="themoviedbapi.module.classpath">
+    <path refid="${module.jdk.classpath.themoviedbapi}"/>
+    <pathelement location="${themoviedbapi.output.dir}"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-core:2.4.4.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-annotations:2.4.4.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-databind:2.4.4.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.7.7.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-lang3:3.3.2.classpath"/>
+    <path refid="library.maven:_commons-codec:commons-codec:1.10.classpath"/>
+    <path refid="library.maven:_org.yamj:api-common:1.1.classpath"/>
+    <path refid="library.maven:_commons-dbcp:commons-dbcp:1.4.classpath"/>
+    <path refid="library.maven:_commons-pool:commons-pool:1.6.classpath"/>
+    <path refid="library.maven:_org.apache.httpcomponents:httpclient:4.2.6.classpath"/>
+    <path refid="library.maven:_org.apache.httpcomponents:httpcore:4.2.5.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.1.1.classpath"/>
+    <path refid="library.maven:_org.slf4j:jcl-over-slf4j:1.7.7.classpath"/>
+    <path refid="library.maven:_junit:junit:4.11.classpath"/>
+    <path refid="library.maven:_org.hamcrest:hamcrest-core:1.3.classpath"/>
+    <path refid="library.maven:_com.google.guava:guava:18.0.classpath"/>
+  </path>
+  
+  <path id="themoviedbapi.runtime.module.classpath">
+    <pathelement location="${themoviedbapi.testoutput.dir}"/>
+    <pathelement location="${themoviedbapi.output.dir}"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-core:2.4.4.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-annotations:2.4.4.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-databind:2.4.4.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.7.7.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-lang3:3.3.2.classpath"/>
+    <path refid="library.maven:_commons-codec:commons-codec:1.10.classpath"/>
+    <path refid="library.maven:_org.yamj:api-common:1.1.classpath"/>
+    <path refid="library.maven:_commons-dbcp:commons-dbcp:1.4.classpath"/>
+    <path refid="library.maven:_commons-pool:commons-pool:1.6.classpath"/>
+    <path refid="library.maven:_org.apache.httpcomponents:httpclient:4.2.6.classpath"/>
+    <path refid="library.maven:_org.apache.httpcomponents:httpcore:4.2.5.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.1.1.classpath"/>
+    <path refid="library.maven:_org.slf4j:jcl-over-slf4j:1.7.7.classpath"/>
+    <path refid="library.maven:_junit:junit:4.11.classpath"/>
+    <path refid="library.maven:_org.hamcrest:hamcrest-core:1.3.classpath"/>
+    <path refid="library.maven:_com.google.guava:guava:18.0.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.themoviedbapi">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.themoviedbapi">
+    <patternset refid="excluded.from.module.themoviedbapi"/>
+  </patternset>
+  
+  <path id="themoviedbapi.module.sourcepath">
+    <dirset dir="${module.themoviedbapi.basedir}">
+      <include name="src/main/java"/>
+    </dirset>
+  </path>
+  
+  <path id="themoviedbapi.module.test.sourcepath">
+    <dirset dir="${module.themoviedbapi.basedir}">
+      <include name="src/test/java"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.themoviedbapi" depends="compile.module.themoviedbapi.production,compile.module.themoviedbapi.tests" description="Compile module themoviedbapi"/>
+  
+  <target name="compile.module.themoviedbapi.production" depends="register.custom.compilers" description="Compile module themoviedbapi; production classes">
+    <mkdir dir="${themoviedbapi.output.dir}"/>
+    <javac2 destdir="${themoviedbapi.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.themoviedbapi}/javac">
+      <compilerarg line="${compiler.args.themoviedbapi}"/>
+      <bootclasspath refid="themoviedbapi.module.bootclasspath"/>
+      <classpath refid="themoviedbapi.module.production.classpath"/>
+      <src refid="themoviedbapi.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.themoviedbapi"/>
+    </javac2>
+    
+    <copy todir="${themoviedbapi.output.dir}">
+      <fileset dir="${module.themoviedbapi.basedir}/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.themoviedbapi.tests" depends="register.custom.compilers,compile.module.themoviedbapi.production" description="compile module themoviedbapi; test classes" unless="skip.tests">
+    <mkdir dir="${themoviedbapi.testoutput.dir}"/>
+    <javac2 destdir="${themoviedbapi.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.themoviedbapi}/javac">
+      <compilerarg line="${compiler.args.themoviedbapi}"/>
+      <bootclasspath refid="themoviedbapi.module.bootclasspath"/>
+      <classpath refid="themoviedbapi.module.classpath"/>
+      <src refid="themoviedbapi.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.themoviedbapi"/>
+    </javac2>
+    
+    <copy todir="${themoviedbapi.testoutput.dir}">
+      <fileset dir="${module.themoviedbapi.basedir}/src/test/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.themoviedbapi" description="cleanup module">
+    <delete dir="${themoviedbapi.output.dir}"/>
+    <delete dir="${themoviedbapi.testoutput.dir}"/>
+  </target>
+</project>
