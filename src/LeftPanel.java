@@ -16,7 +16,6 @@ public class LeftPanel extends JPanel{
     /* Buttons */
     private JButton add;
     private JButton delete;
-    private JButton view;
     private JButton movies;
     private JButton shows;
     /* Radio buttons */
@@ -61,7 +60,6 @@ public class LeftPanel extends JPanel{
         Box secondBox = Box.createHorizontalBox();
         secondBox.add(add = button(Constants.ADD, listener));
         secondBox.add(delete = button(Constants.DELETE, listener));
-        secondBox.add(view = button(Constants.VIEW, listener));
         Box thirdBox = Box.createHorizontalBox();
         thirdBox.add(shows = button(Constants.SHOW_TOGGLE, listener));
         thirdBox.add(movies = button(Constants.MOVIE_TOGGLE, listener));
