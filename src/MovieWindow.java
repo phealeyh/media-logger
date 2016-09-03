@@ -30,7 +30,7 @@ public class MovieWindow extends JFrame {
 
     private void setup(){
         setTitle(mediaName);
-        setPreferredSize(new Dimension(500, 450));
+        setPreferredSize(new Dimension(525, 450));
         setLocation(1100,500);
     }
 
@@ -97,7 +97,7 @@ public class MovieWindow extends JFrame {
                     text = "";
                     box.add(label);
                 }
-                if(i == (strings.length - 1)){
+                else if(i == (strings.length - 1)){
                     label.setText(text);
                     label.setFont(label.getFont().deriveFont(10.0f));
                     box.add(label);

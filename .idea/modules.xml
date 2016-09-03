@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/media-logger.iml" filepath="$PROJECT_DIR$/media-logger.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib/themoviedbapi-master/themoviedbapi.iml" filepath="$PROJECT_DIR$/lib/themoviedbapi-master/themoviedbapi.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lib/themoviedbapi/themoviedbapi.iml" filepath="$PROJECT_DIR$/lib/themoviedbapi/themoviedbapi.iml" />
     </modules>
   </component>
 </project>
