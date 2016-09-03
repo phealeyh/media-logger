@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_media-logger" default="compile.module.media-logger">
+  <dirname property="module.media-logger.basedir" file="${ant.file.module_media-logger}"/>
+  
+  <property name="module.jdk.home.media-logger" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.media-logger" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.media-logger" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.media-logger" value="-encoding UTF-8 -source 1.7 -target 1.7 ${compiler.args}"/>
+  
+  <property name="media-logger.output.dir" value="${module.media-logger.basedir}/out/production/media-logger"/>
+  <property name="media-logger.testoutput.dir" value="${module.media-logger.basedir}/out/test/media-logger"/>
+  
+  <path id="media-logger.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="media-logger.module.production.classpath">
+    <path refid="${module.jdk.classpath.media-logger}"/>
+    <pathelement location="${themoviedbapi.output.dir}"/>
+  </path>
+  
+  <path id="media-logger.runtime.production.module.classpath">
+    <pathelement location="${media-logger.output.dir}"/>
+    <path refid="themoviedbapi.runtime.production.module.classpath"/>
+  </path>
+  
+  <path id="media-logger.module.classpath">
+    <pathelement location="${media-logger.output.dir}"/>
+    <path refid="${module.jdk.classpath.media-logger}"/>
+    <pathelement location="${themoviedbapi.testoutput.dir}"/>
+    <pathelement location="${themoviedbapi.output.dir}"/>
+  </path>
+  
+  <path id="media-logger.runtime.module.classpath">
+    <pathelement location="${media-logger.testoutput.dir}"/>
+    <pathelement location="${media-logger.output.dir}"/>
+    <path refid="themoviedbapi.runtime.module.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.media-logger">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.media-logger">
+    <patternset refid="excluded.from.module.media-logger"/>
+  </patternset>
+  
+  <path id="media-logger.module.sourcepath">
+    <dirset dir="${module.media-logger.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.media-logger" depends="compile.module.media-logger.production,compile.module.media-logger.tests" description="Compile module media-logger"/>
+  
+  <target name="compile.module.media-logger.production" depends="register.custom.compilers,compile.module.themoviedbapi" description="Compile module media-logger; production classes">
+    <mkdir dir="${media-logger.output.dir}"/>
+    <javac2 destdir="${media-logger.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.media-logger}/javac">
+      <compilerarg line="${compiler.args.media-logger}"/>
+      <bootclasspath refid="media-logger.module.bootclasspath"/>
+      <classpath refid="media-logger.module.production.classpath"/>
+      <src refid="media-logger.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.media-logger"/>
+    </javac2>
+    
+    <copy todir="${media-logger.output.dir}">
+      <fileset dir="${module.media-logger.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.media-logger.tests" depends="register.custom.compilers,compile.module.media-logger.production" description="compile module media-logger; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.media-logger" description="cleanup module">
+    <delete dir="${media-logger.output.dir}"/>
+    <delete dir="${media-logger.testoutput.dir}"/>
+  </target>
+</project>

@@ -1,10 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0838c171-16de-4c1a-8ae6-0118f211333b" name="Default" comment="removed redundant episode class.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/model/Episode.java" afterPath="" />
+    <list default="true" id="0838c171-16de-4c1a-8ae6-0118f211333b" name="Default" comment="fixed small formatting changes">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media-logger.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media-logger.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media-logger.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module_media-logger.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MVC_Movie_Collection/LeftPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MVC_Movie_Collection/LeftPanel$ButtonListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MVC_Movie_Collection/LeftPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MVC_Movie_Collection/RightPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MVC_Movie_Collection/RightPanel$ListListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MVC_Movie_Collection/RightPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MVC_Movie_Collection/Root.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MVC_Movie_Collection/Window$Panel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MVC_Movie_Collection/Window.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MVC_Movie_Collection/model/Episode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MVC_Movie_Collection/model/Media.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MVC_Movie_Collection/model/Movie.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MVC_Movie_Collection/model/Movies.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MVC_Movie_Collection/model/Show.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MVC_Movie_Collection/model/Shows.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MVC_Movie_Collection/model/View.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MVC_Movie_Collection/model/Viewable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MVC_Movie_Collection/themoviedbapi-master/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MVC_Movie_Collection/themoviedbapi-master/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MVC_Movie_Collection/themoviedbapi-master/LICENCE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MVC_Movie_Collection/themoviedbapi-master/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MVC_Movie_Collection/themoviedbapi-master/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Movie_Collection_MVC/Constants.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Movie_Collection_MVC/LeftPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Movie_Collection_MVC/LeftPanel$ButtonListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Movie_Collection_MVC/LeftPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Movie_Collection_MVC/MediaWindow$MediaPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Movie_Collection_MVC/MediaWindow.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Movie_Collection_MVC/RightPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Movie_Collection_MVC/RightPanel$ListListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Movie_Collection_MVC/RightPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Movie_Collection_MVC/Root.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Movie_Collection_MVC/Window$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Movie_Collection_MVC/Window$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Movie_Collection_MVC/Window$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Movie_Collection_MVC/Window$Panel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Movie_Collection_MVC/Window.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Movie_Collection_MVC/model/Episode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Movie_Collection_MVC/model/Media.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Movie_Collection_MVC/model/Movie.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Movie_Collection_MVC/model/Movies.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Movie_Collection_MVC/model/Show.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Movie_Collection_MVC/model/Shows.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Movie_Collection_MVC/model/View.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Movie_Collection_MVC/model/Viewable.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LeftPanel.java" afterPath="$PROJECT_DIR$/src/LeftPanel.java" />
     </list>
     <ignored path="media-logger.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -19,7 +66,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -32,8 +78,8 @@
       <file leaf-file-name="LeftPanel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LeftPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="66" column="43" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
+            <state relative-caret-position="541">
+              <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,8 +157,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="2576" />
+    <option name="height" value="1576" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -161,7 +209,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
@@ -196,26 +243,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="media-logger" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="media-logger" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -223,7 +253,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/themoviedbapi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/media_logger_jar/media-logger.jar" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -248,7 +278,7 @@
       <recent name="C:\Users\tranc\Dropbox\Programming\media-logger\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Unnamed">
+  <component name="RunManager" selected="JAR Application.Unnamed">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -268,8 +298,13 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method />
@@ -288,8 +323,13 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -668,6 +708,15 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="false" name="Unnamed" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/media_logger_jar/media-logger.jar" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\tranc\Dropbox\Programming\media-logger" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.7" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="false" name="All in themoviedbapi" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="themoviedbapi" />
@@ -689,9 +738,10 @@
       <patterns />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.All in themoviedbapi" />
+      <item index="1" class="java.lang.String" itemvalue="JAR Application.Unnamed" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.All in themoviedbapi" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -776,7 +826,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55420000" />
+    <option name="totallyTimeSpent" value="55746000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -788,28 +838,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="2576" height="1576" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34414226" sideWeight="0.495116" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34368384" sideWeight="0.495116" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39937106" sideWeight="0.509768" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3987297" sideWeight="0.509768" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33211234" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20254058" sideWeight="0.48779" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32809225" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2033543" sideWeight="0.48779" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1916972" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19157393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298217" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25396827" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959481" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39937106" sideWeight="0.490232" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -862,156 +912,30 @@
     <entry file="file://$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/TheMovieDbApi.java" />
     <entry file="file://$PROJECT_DIR$/src/Request.java" />
     <entry file="file://$PROJECT_DIR$/lib/api-themoviedb-master/src/main/java/com/omertron/themoviedbapi/methods/TmdbAuthentication.java" />
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/.gitattributes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/test/java/info/movito/themoviedbapi/AbstractTmdbApiTestTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/test/java/info/movito/themoviedbapi/AbstractTmdbApiTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/test/java/info/movito/themoviedbapi/AccountApiTestTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/test/java/info/movito/themoviedbapi/AccountApiTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/tools/ApiUrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="149" column="16" selection-start-line="149" selection-start-column="16" selection-end-line="149" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/TmdbKeywords.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/TmdbFind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/TmdbCollections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/TmdbMovies.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/TmdbAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/TmdbApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="141" column="17" selection-start-line="141" selection-start-column="17" selection-end-line="141" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/.gitattributes" />
+    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/test/java/info/movito/themoviedbapi/AbstractTmdbApiTestTest.java" />
+    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/test/java/info/movito/themoviedbapi/AbstractTmdbApiTest.java" />
+    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/test/java/info/movito/themoviedbapi/AccountApiTestTest.java" />
+    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/test/java/info/movito/themoviedbapi/AccountApiTest.java" />
+    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/tools/ApiUrl.java" />
+    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/TmdbKeywords.java" />
+    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/TmdbFind.java" />
+    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/TmdbCollections.java" />
+    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/TmdbMovies.java" />
+    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/TmdbAccount.java" />
+    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/TmdbApi.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/util/List.java" />
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/TmdbLists.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-585">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/model/core/MovieResultsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/AbstractTmdbApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/model/core/ResultsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/model/Artwork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/model/MovieDb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="243" column="20" selection-start-line="243" selection-start-column="20" selection-end-line="243" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/TmdbLists.java" />
+    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/model/core/MovieResultsPage.java" />
+    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/AbstractTmdbApi.java" />
+    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/model/core/ResultsPage.java" />
+    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/model/Artwork.java" />
+    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/model/MovieDb.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/awt/Dimension.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/util/StringTokenizer.java" />
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/TmdbSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/TmdbSearch.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/lang/String.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/javax/swing/JComponent.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/awt/Component.java" />
@@ -1062,8 +986,8 @@
     <entry file="file://$PROJECT_DIR$/src/MediaWindow.java" />
     <entry file="file://$PROJECT_DIR$/src/LeftPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="66" column="43" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
+        <state relative-caret-position="541">
+          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
