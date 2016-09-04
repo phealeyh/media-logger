@@ -41,10 +41,18 @@ public class Window extends JFrame{ //starting window
     private void setMenuOptions(){
 
         menu = new JMenu(Constants.MENU);
-        JMenuItem saveAsItem, loadItem, closeItem;
+        JMenuItem saveAsItem, loadItem, closeItem, aboutItem;
+        menu.add(aboutItem = new JMenuItem(Constants.ABOUT));
         menu.add(saveAsItem = new JMenuItem(Constants.SAVE_AS));
         menu.add(loadItem = new JMenuItem(Constants.LOAD));
         menu.add(closeItem = new JMenuItem(Constants.EXIT));
+        aboutItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //create a new window that talks about yourself
+                new AboutWindow();
+            }
+        });
         saveAsItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

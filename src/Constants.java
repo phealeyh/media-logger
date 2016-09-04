@@ -11,7 +11,7 @@ public class Constants {
     public static final String MOVIE_TOGGLE = "Movies (Toggle)";
     public static final String TOGGLING_MOVIES = "* Currently toggling a list of your movies";
     public static final String TOGGLING_SHOWS = "* Currently toggling a list of your shows";
-    public static final String PROGRAM_NAME = "Kevin's Media Database";
+    public static final String PROGRAM_NAME = "Kevin's Media Logger";
     public static final String MENU = "My Menu";
     public static final String SAVE = "Save";
     public static final String SAVE_AS = "Save As";
@@ -22,4 +22,10 @@ public class Constants {
     public static final String TAG = "Tag:";
     public static final String OVERVIEW = "Overview:";
     public static final String TMDB_LINK = "https://api.themoviedb.org/3/movie/550?api_key=";
+    public static final String ABOUT = "About";
+    public static final String CREATOR = "Creator: This program was created by Kevin Hang.";
+    public static final String CONTACT_ME = "Contact: Please contact me at Phealey.Hang@student.uts.edu.au for any enquiries.";
+    public static final String GITHUB = "Github: https://github.com/phealeyh";
+    public static final String IMAGE_PATH = "images/linux.png";
+
 }
