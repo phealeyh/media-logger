@@ -43,9 +43,19 @@ public class FileChooser extends JFileChooser{
         if (fileChooser.showSaveDialog(component) == JFileChooser.APPROVE_OPTION) {
             File fileToSave = fileChooser.getSelectedFile();
             System.out.println("Save as file: " + fileToSave.getAbsolutePath());
-            saveLocation = fileToSave.getAbsolutePath();
-
+            saveLocation = getSsveLocation(fileToSave);
         }
+    }
+
+    //a private helper method to ensure the .ser extension
+    //is used if one isn't specified by the user.
+    private String getSsveLocation(File fileToSave){
+        String path = fileToSave.getAbsolutePath();
+        //doesn't contain extension
+        if(!path.contains(".ser")) {
+            path += ".ser";
+        }
+        return path;
     }
 
     public String getLoadLocation() {

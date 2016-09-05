@@ -49,7 +49,6 @@ public class Window extends JFrame{ //starting window
         aboutItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //create a new window that talks about yourself
                 new AboutWindow();
             }
         });
@@ -82,6 +81,9 @@ public class Window extends JFrame{ //starting window
         menuBar.add(menu);
         setJMenuBar(menuBar);
     }
+
+
+
 
     private void build(){
         fc = new FileChooser(getGlassPane());
