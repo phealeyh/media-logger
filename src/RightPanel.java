@@ -19,10 +19,8 @@ public class RightPanel extends JPanel implements View{
         this.media = media;
         setup();
         build();
-        //attach the panel at the very end
         media.movies().attach(this);
         media.shows().attach(this);
-       // media.attach(this); //send itself as an object frame
     }
 
     private void setup(){
