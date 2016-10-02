@@ -6,15 +6,13 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0838c171-16de-4c1a-8ae6-0118f211333b" name="Default" comment="program now">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PlotConstructor.java" />
+    <list default="true" id="0838c171-16de-4c1a-8ae6-0118f211333b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/artifacts/media_logger_jar/media-logger.jar" afterPath="$PROJECT_DIR$/output/artifacts/media_logger_jar/media-logger.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/production/media-logger/MovieWindow$MediaPanel.class" afterPath="$PROJECT_DIR$/output/production/media-logger/MovieWindow$MediaPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/production/media-logger/RightPanel$ListListener.class" afterPath="$PROJECT_DIR$/output/production/media-logger/RightPanel$ListListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/production/media-logger/ShowWindow$MediaPanel.class" afterPath="$PROJECT_DIR$/output/production/media-logger/ShowWindow$MediaPanel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MovieWindow.java" afterPath="$PROJECT_DIR$/src/MovieWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShowWindow.java" afterPath="$PROJECT_DIR$/src/ShowWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media-logger.properties" afterPath="$PROJECT_DIR$/media-logger.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media-logger.xml" afterPath="$PROJECT_DIR$/media-logger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module_media-logger.xml" afterPath="$PROJECT_DIR$/module_media-logger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RightPanel.java" afterPath="$PROJECT_DIR$/src/RightPanel.java" />
     </list>
     <ignored path="media-logger.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,11 +40,9 @@
       <file leaf-file-name="LeftPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LeftPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
+            <state relative-caret-position="1326">
               <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -54,11 +50,9 @@
       <file leaf-file-name="Window.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="357">
               <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MovieWindow.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MovieWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MovieWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+            <state relative-caret-position="952">
+              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,12 +79,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlotConstructor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PlotConstructor.java">
+      <file leaf-file-name="RightPanel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/RightPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-              <folding />
+            <state relative-caret-position="173">
+              <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+              <folding>
+                <element signature="e#4273#4274#0" expanded="true" />
+                <element signature="e#4325#4326#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,7 +143,6 @@
         <option value="$PROJECT_DIR$/lib/themoviedbapi/src/test/java/info/movito/themoviedbapi/AccountApiTest.java" />
         <option value="$PROJECT_DIR$/lib/themoviedbapi/pom.xml" />
         <option value="$PROJECT_DIR$/src/model/Viewable.java" />
-        <option value="$PROJECT_DIR$/src/RightPanel.java" />
         <option value="$PROJECT_DIR$/src/MediaWindow.java" />
         <option value="$PROJECT_DIR$/src/LeftPanel.java" />
         <option value="$PROJECT_DIR$/src/Constants.java" />
@@ -157,6 +153,7 @@
         <option value="$PROJECT_DIR$/src/PlotConstructor.java" />
         <option value="$PROJECT_DIR$/src/ShowWindow.java" />
         <option value="$PROJECT_DIR$/src/MovieWindow.java" />
+        <option value="$PROJECT_DIR$/src/RightPanel.java" />
       </list>
     </option>
   </component>
@@ -235,8 +232,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -252,20 +247,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="media-logger" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="media-logger" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="media-logger" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -307,6 +288,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -338,7 +321,7 @@
       <recent name="C:\Users\tranc\Dropbox\Programming\media-logger\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JAR Application.Unnamed">
+  <component name="RunManager" selected="Application.Unnamed">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -846,7 +829,13 @@
       <workItem from="1472986368759" duration="41000" />
       <workItem from="1473038307897" duration="255000" />
       <workItem from="1473038625504" duration="1414000" />
-      <workItem from="1474168750599" duration="379000" />
+      <workItem from="1474168750599" duration="515000" />
+      <workItem from="1474369226988" duration="101000" />
+      <workItem from="1474374233444" duration="50000" />
+      <workItem from="1474374297514" duration="6000" />
+      <workItem from="1474531722102" duration="1255000" />
+      <workItem from="1474862968168" duration="687000" />
+      <workItem from="1475368029166" duration="486000" />
     </task>
     <task id="LOCAL-00001" summary="created boxes to structure the position of the text for the media window">
       <created>1472120583296</created>
@@ -918,11 +907,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472983017479</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="refactored constructPlot function so that it is a static function that is only implemented once.">
+      <created>1474169183438</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1474169183439</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63584000" />
+    <option name="totallyTimeSpent" value="66305000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -944,12 +940,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3987297" sideWeight="0.509768" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33211234" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32809225" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20183486" sideWeight="0.48779" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32809225" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39030206" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12957075" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298217" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2535771" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959481" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -989,7 +985,8 @@
     <MESSAGE value="re-added api library" />
     <MESSAGE value="fixed up windows and jar file" />
     <MESSAGE value="added updated jar along with an about page" />
-    <option name="LAST_COMMIT_MESSAGE" value="added updated jar along with an about page" />
+    <MESSAGE value="refactored constructPlot function so that it is a static function that is only implemented once." />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored constructPlot function so that it is a static function that is only implemented once." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1002,7 +999,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/.gitattributes" />
     <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/.gitignore" />
     <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/test/java/info/movito/themoviedbapi/AbstractTmdbApiTestTest.java" />
     <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/test/java/info/movito/themoviedbapi/AbstractTmdbApiTest.java" />
@@ -1051,14 +1047,6 @@
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/awt/BorderLayout.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/awt/GridLayout.java" />
     <entry file="file://$PROJECT_DIR$/src/MediaWindow.java" />
-    <entry file="file://$PROJECT_DIR$/src/RightPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/awt/Dimension.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -1070,9 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1087,7 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1095,7 +1079,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
           <caret line="148" column="13" selection-start-line="148" selection-start-column="13" selection-end-line="148" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1103,38 +1086,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="358">
           <caret line="1289" column="16" selection-start-line="1289" selection-start-column="16" selection-end-line="1289" selection-end-column="16" />
-          <folding>
-            <element signature="e#41868#41869#0" expanded="false" />
-            <element signature="e#41900#41901#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LeftPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
+        <state relative-caret-position="1326">
           <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MediaPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="39" column="66" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MediaPanel.java" />
     <entry file="file://$PROJECT_DIR$/src/Window.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="357">
           <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PlotConstructor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1154,20 +1130,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PlotConstructor.java">
+    <entry file="file://$PROJECT_DIR$/src/MovieWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+        <state relative-caret-position="952">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/javax/swing/JList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="240" column="8" selection-start-line="240" selection-start-column="8" selection-end-line="240" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MovieWindow.java">
+    <entry file="file://$PROJECT_DIR$/src/RightPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+        <state relative-caret-position="173">
+          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#4273#4274#0" expanded="true" />
+            <element signature="e#4325#4326#0" expanded="true" />
           </folding>
         </state>
       </provider>

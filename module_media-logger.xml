@@ -8,8 +8,8 @@
   
   <property name="compiler.args.media-logger" value="-encoding UTF-8 -source 1.7 -target 1.7 ${compiler.args}"/>
   
-  <property name="media-logger.output.dir" value="${module.media-logger.basedir}/out/production/media-logger"/>
-  <property name="media-logger.testoutput.dir" value="${module.media-logger.basedir}/out/test/media-logger"/>
+  <property name="media-logger.output.dir" value="${module.media-logger.basedir}/output/production/media-logger"/>
+  <property name="media-logger.testoutput.dir" value="${module.media-logger.basedir}/output/test/media-logger"/>
   
   <path id="media-logger.module.bootclasspath">
     <!-- Paths to be included in compilation bootclasspath -->

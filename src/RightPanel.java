@@ -148,22 +148,20 @@ public class RightPanel extends JPanel implements View{
             int index = list.getSelectedIndex();
             if(index == -1) //nothing was selected
                 return;
-            //get name of media
             String name;
             if(movieListSelected()){
                 name = (String)movieModel.get(index);
                 JOptionPane.showMessageDialog(new JFrame(), "Movie Selected");
                 new MovieWindow(name);
 
-                //open url based on the movie name
             }
             else{
                 name = (String)showModel.get(index);
                 JOptionPane.showMessageDialog(new JFrame(), "Show Selected");
                 new ShowWindow(name);
-                //open url based on movie name
             }
-            //create new window and frame based on the media selected
+            //deselect the item
+            list.clearSelection();
         }
 
     }
