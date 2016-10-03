@@ -1,9 +1,8 @@
 # Media Logger
-A media logger application written with the AWT and Swing libraries. It will be able to track whatever movie and show is inputted and use the TMDB api to retrieve the information about the movie or show selected. 
+A GUI-based media logger application written with the AWT and Swing libraries. It will be able to track whatever movie and show is inputted and use the TMDB api to retrieve the information about the movie or show selected. The application can be seen as a portable wiki for movies and shows -- displaying the summary of the selected film/show. 
 
 Please go to media-logger\output\artifacts\media_logger_jar and run the jar file to test the program.
 
-Minor note: please ensure that you have the .ser extension when saving the media object as a file.
 
 #Adding A Movie/Show
 
