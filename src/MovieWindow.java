@@ -67,12 +67,15 @@ public class MovieWindow extends JFrame {
             title.setFont(title.getFont().deriveFont(18.0f));
             box.add(title);
             JLabel plot = new JLabel(Constants.OVERVIEW);
+            //add and get image of the movie
+            MediaImage image = new MediaImage(Constants.IMAGE_URL+movie.getPosterPath());
+            box.add(new JLabel(new ImageIcon(image.getImage())));
+
             //add plot information here
             box.add(plot);
             //add the overview of the plot
+
             box = PlotConstructor.constructPlot(movie.getOverview().split(" "),box);
-            MediaImage image = new MediaImage(Constants.IMAGE_URL+movie.getPosterPath());
-            box.add(new JLabel(new ImageIcon(image.getImage())));
             add(box, BorderLayout.NORTH);
         }
 

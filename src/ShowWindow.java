@@ -1,3 +1,4 @@
+import images.MediaImage;
 import info.movito.themoviedbapi.TmdbApi;
 import info.movito.themoviedbapi.model.tv.TvSeries;
 
@@ -54,15 +55,22 @@ public class ShowWindow extends JFrame{
 
         private void build(){
             Box box = Box.createVerticalBox();
+
             //add title information here
             JLabel title = new JLabel(Constants.TITLE + " " + series.getName());
             title.setFont(title.getFont().deriveFont(18.0f));
             box.add(title);
             JLabel plot = new JLabel(Constants.OVERVIEW);
+
+            //add and get image of the series
+            MediaImage image = new MediaImage(Constants.IMAGE_URL+series.getPosterPath());
+            box.add(new JLabel(new ImageIcon(image.getImage())));
+
             //add plot information here
             box.add(plot);
             //add the overview of the plot
             box = PlotConstructor.constructPlot(series.getOverview().split(" "),box);
+
             add(box, BorderLayout.NORTH);
         }
 
