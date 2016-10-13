@@ -1,10 +1,13 @@
 
 
+import images.MediaImage;
 import info.movito.themoviedbapi.TmdbApi;
 import info.movito.themoviedbapi.model.MovieDb;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.net.URL;
 
 public class MovieWindow extends JFrame {
     /* Private Instance Variables */
@@ -68,6 +71,8 @@ public class MovieWindow extends JFrame {
             box.add(plot);
             //add the overview of the plot
             box = PlotConstructor.constructPlot(movie.getOverview().split(" "),box);
+            MediaImage image = new MediaImage(Constants.IMAGE_URL+movie.getPosterPath());
+            box.add(new JLabel(new ImageIcon(image.getImage())));
             add(box, BorderLayout.NORTH);
         }
 

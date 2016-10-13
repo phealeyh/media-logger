@@ -27,6 +27,6 @@ public class Constants {
     public static final String CONTACT_ME = "Contact: Please contact me at Phealey.Hang@student.uts.edu.au for any enquiries.";
     public static final String GITHUB = "Github: https://github.com/phealeyh";
     public static final String IMAGE_PATH = "images/linux.png";
-    public static final String IMAGE_URL = "http://image.tmdb.org/t/p/w500/";
+    public static final String IMAGE_URL = "http://image.tmdb.org/t/p/w500";
 
 }
