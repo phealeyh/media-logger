@@ -71,6 +71,8 @@ public class ShowWindow extends JFrame{
             //add the overview of the plot
             box = PlotConstructor.constructPlot(series.getOverview().split(" "),box);
 
+            //add the popularity of the show
+            box.add(new JLabel(Constants.POPULARITY + series.getPopularity()));
             add(box, BorderLayout.NORTH);
         }
 

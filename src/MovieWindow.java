@@ -74,8 +74,11 @@ public class MovieWindow extends JFrame {
             //add plot information here
             box.add(plot);
             //add the overview of the plot
-
             box = PlotConstructor.constructPlot(movie.getOverview().split(" "),box);
+
+            //add the popularity of the movie
+            box.add(new JLabel(Constants.POPULARITY + movie.getPopularity()));
+
             add(box, BorderLayout.NORTH);
         }
 

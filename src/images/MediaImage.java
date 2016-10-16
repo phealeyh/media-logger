@@ -13,7 +13,7 @@ public class MediaImage {
         try{
             URL url = new URL(path);
             image = ImageIO.read(url);
-            image = image.getScaledInstance(200,225,Image.SCALE_FAST);
+            image = image.getScaledInstance(185,215,Image.SCALE_FAST);
         }
         catch(java.io.IOException f){
             f.printStackTrace();
