@@ -6,17 +6,40 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0838c171-16de-4c1a-8ae6-0118f211333b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/production/media-logger/Constants.class" afterPath="$PROJECT_DIR$/output/production/media-logger/Constants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/production/media-logger/MovieWindow$MediaPanel.class" afterPath="$PROJECT_DIR$/output/production/media-logger/MovieWindow$MediaPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/production/media-logger/ShowWindow$MediaPanel.class" afterPath="$PROJECT_DIR$/output/production/media-logger/ShowWindow$MediaPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/production/media-logger/ShowWindow.class" afterPath="$PROJECT_DIR$/output/production/media-logger/ShowWindow.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/production/media-logger/Window.class" afterPath="$PROJECT_DIR$/output/production/media-logger/Window.class" />
+    <list default="true" id="0838c171-16de-4c1a-8ae6-0118f211333b" name="Default" comment="added popularity of shows and movies">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/MediaBox.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/production/media-logger/Constants.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/production/media-logger/LeftPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/production/media-logger/LeftPanel$ButtonListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/production/media-logger/LeftPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/production/media-logger/MovieWindow$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/production/media-logger/MovieWindow$MediaPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/production/media-logger/MovieWindow.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/production/media-logger/RightPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/production/media-logger/RightPanel$ListListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/production/media-logger/RightPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/production/media-logger/Root.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/production/media-logger/ShowWindow$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/production/media-logger/ShowWindow$MediaPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/production/media-logger/ShowWindow.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/production/media-logger/Window$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/production/media-logger/Window$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/production/media-logger/Window$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/production/media-logger/Window$Panel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output/production/media-logger/Window.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/AboutWindow.java" afterPath="$PROJECT_DIR$/src/main/AboutWindow.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Constants.java" afterPath="$PROJECT_DIR$/src/main/Constants.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/LeftPanel.java" afterPath="$PROJECT_DIR$/src/main/LeftPanel.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MovieWindow.java" afterPath="$PROJECT_DIR$/src/main/MovieWindow.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/PlotConstructor.java" afterPath="$PROJECT_DIR$/src/main/PlotConstructor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/RightPanel.java" afterPath="$PROJECT_DIR$/src/main/RightPanel.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Root.java" afterPath="$PROJECT_DIR$/src/main/Root.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ShowWindow.java" afterPath="$PROJECT_DIR$/src/main/ShowWindow.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Window.java" afterPath="$PROJECT_DIR$/src/main/Window.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/artifacts/media_logger_jar/media-logger.jar" afterPath="$PROJECT_DIR$/output/artifacts/media_logger_jar/media-logger.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Constants.java" afterPath="$PROJECT_DIR$/src/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MovieWindow.java" afterPath="$PROJECT_DIR$/src/MovieWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ShowWindow.java" afterPath="$PROJECT_DIR$/src/ShowWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/images/MediaImage.java" afterPath="$PROJECT_DIR$/src/images/MediaImage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/production/media-logger/jar/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/output/production/media-logger/jar/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jar/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/jar/META-INF/MANIFEST.MF" />
     </list>
     <ignored path="media-logger.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,53 +73,98 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="MovieWindow.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MovieWindow.java">
+        <entry file="file://$PROJECT_DIR$/src/main/MovieWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="829">
-              <caret line="79" column="43" selection-start-line="79" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MovieDb.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/themoviedbapi-master/src/main/java/info/movito/themoviedbapi/model/MovieDb.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3604">
-              <caret line="288" column="17" selection-start-line="288" selection-start-column="17" selection-end-line="288" selection-end-column="17" />
+            <state relative-caret-position="707">
+              <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
               <folding>
-                <element signature="e#6236#6237#0" expanded="true" />
-                <element signature="e#6269#6270#0" expanded="true" />
+                <element signature="e#1059#1060#0" expanded="true" />
+                <element signature="e#1096#1097#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Constants.java">
+      <file leaf-file-name="PlotConstructor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/PlotConstructor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+            <state relative-caret-position="105">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RightPanel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/RightPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ShowWindow.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ShowWindow.java">
+        <entry file="file://$PROJECT_DIR$/src/main/ShowWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="65" column="17" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
+            <state relative-caret-position="527">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+              <folding>
+                <element signature="e#1469#1470#0" expanded="true" />
+                <element signature="e#1545#1546#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Window.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Window.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MediaImage.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/images/MediaImage.java">
+      <file leaf-file-name="Root.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Root.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            <state relative-caret-position="60">
+              <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MediaBox.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/MediaBox.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="37" column="32" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AboutWindow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/AboutWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -152,9 +220,20 @@
         <option value="$PROJECT_DIR$/src/PlotConstructor.java" />
         <option value="$PROJECT_DIR$/src/RightPanel.java" />
         <option value="$PROJECT_DIR$/src/Constants.java" />
-        <option value="$PROJECT_DIR$/src/MovieWindow.java" />
         <option value="$PROJECT_DIR$/src/ShowWindow.java" />
         <option value="$PROJECT_DIR$/src/images/MediaImage.java" />
+        <option value="$PROJECT_DIR$/src/MovieWindow.java" />
+        <option value="$PROJECT_DIR$/src/main/AboutWindow.java" />
+        <option value="$PROJECT_DIR$/src/main/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/LeftPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/PlotConstructor.java" />
+        <option value="$PROJECT_DIR$/src/main/RightPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/Window.java" />
+        <option value="$PROJECT_DIR$/src/components/MovieDB.java" />
+        <option value="$PROJECT_DIR$/src/main/MovieWindow.java" />
+        <option value="$PROJECT_DIR$/src/components/MediaBox.java" />
+        <option value="$PROJECT_DIR$/src/main/Root.java" />
+        <option value="$PROJECT_DIR$/src/main/ShowWindow.java" />
       </list>
     </option>
   </component>
@@ -180,10 +259,8 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="2576" />
-    <option name="height" value="1576" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -232,15 +309,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="media-logger" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -267,8 +347,45 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="media-logger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="media-logger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="media-logger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="media-logger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -277,7 +394,7 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/output/artifacts/media_logger_jar/media-logger.jar" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
@@ -289,10 +406,14 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/tranc/Dropbox/Programming/media-logger/lib/themoviedbapi-master/src/main/java/info/movito/themoviedbapi/model/MovieDb.java" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="info.movito.themoviedbapi" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="components" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -718,7 +839,7 @@
     </configuration>
     <configuration default="false" name="Unnamed" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Root" />
+      <option name="MAIN_CLASS_NAME" value="main.Root" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -828,7 +949,8 @@
       <workItem from="1476413260151" duration="10000" />
       <workItem from="1476416069362" duration="5000" />
       <workItem from="1476435639820" duration="1487000" />
-      <workItem from="1476613161700" duration="1324000" />
+      <workItem from="1476613161700" duration="2198000" />
+      <workItem from="1476674920432" duration="1523000" />
     </task>
     <task id="LOCAL-00001" summary="created boxes to structure the position of the text for the media window">
       <created>1472120583296</created>
@@ -942,11 +1064,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476391785160</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="added popularity of shows and movies">
+      <created>1476617417461</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1476617417461</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79895000" />
+    <option name="totallyTimeSpent" value="82292000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -958,23 +1087,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1576" extended-state="6" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34156668" sideWeight="0.495116" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34067085" sideWeight="0.495116" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3987297" sideWeight="0.509768" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33211234" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20889203" sideWeight="0.48779" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2085954" sideWeight="0.48779" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32745236" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20429252" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2039072" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956952" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2535771" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24908425" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -985,7 +1115,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39937106" sideWeight="0.497558" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956952" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1019,7 +1148,8 @@
     <MESSAGE value="added image url constant" />
     <MESSAGE value="now retrieves an image of the movie that is being displayed" />
     <MESSAGE value="now retrieves an image of the movie and show that is being displayed" />
-    <option name="LAST_COMMIT_MESSAGE" value="now retrieves an image of the movie and show that is being displayed" />
+    <MESSAGE value="added popularity of shows and movies" />
+    <option name="LAST_COMMIT_MESSAGE" value="added popularity of shows and movies" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1032,12 +1162,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/TmdbFind.java" />
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/TmdbCollections.java" />
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/TmdbMovies.java" />
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/TmdbAccount.java" />
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/TmdbApi.java" />
-    <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/TmdbLists.java" />
     <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/model/core/MovieResultsPage.java" />
     <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/AbstractTmdbApi.java" />
     <entry file="file://$PROJECT_DIR$/lib/themoviedbapi/src/main/java/info/movito/themoviedbapi/model/core/ResultsPage.java" />
@@ -1072,7 +1196,6 @@
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/awt/GridLayout.java" />
     <entry file="file://$PROJECT_DIR$/src/MediaWindow.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/awt/Dimension.java" />
-    <entry file="file://$PROJECT_DIR$/src/AboutWindow.java" />
     <entry file="file://$PROJECT_DIR$/src/serialization/WriteToFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1083,35 +1206,11 @@
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/io/File.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/javax/swing/JFileChooser.java" />
     <entry file="file://$PROJECT_DIR$/src/MediaPanel.java" />
-    <entry file="file://$PROJECT_DIR$/src/PlotConstructor.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/javax/swing/JList.java" />
-    <entry file="file://$PROJECT_DIR$/src/Window.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="70" column="11" selection-start-line="70" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/FileChooser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RightPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="27" column="50" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LeftPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1141,11 +1240,11 @@
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/java/awt/Image.java" />
     <entry file="file://$PROJECT_DIR$/lib/themoviedbapi-master/src/main/java/info/movito/themoviedbapi/model/MovieDb.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3604">
+        <state relative-caret-position="3180">
           <caret line="288" column="17" selection-start-line="288" selection-start-column="17" selection-end-line="288" selection-end-column="17" />
           <folding>
-            <element signature="e#6236#6237#0" expanded="true" />
-            <element signature="e#6269#6270#0" expanded="true" />
+            <element signature="e#6236#6237#0" expanded="false" />
+            <element signature="e#6269#6270#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1161,34 +1260,177 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MovieWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="829">
-          <caret line="79" column="43" selection-start-line="79" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ShowWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="65" column="17" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/images/MediaImage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        <state relative-caret-position="345">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#516#517#0" expanded="false" />
+            <element signature="e#544#545#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="150.0" y="375.0">com</node>
+            <node x="158.0" y="0.0">components</node>
+            <node x="179.0" y="153.0">netscape</node>
+            <node x="161.0" y="227.0">classes</node>
+            <node x="145.0" y="449.0">sun</node>
+            <node x="446.0" y="375.0">java</node>
+            <node x="0.0" y="227.0">PlotConstructor</node>
+            <node x="460.0" y="301.0">javax</node>
+            <node x="0.0" y="375.0">ShowWindow</node>
+            <node x="0.0" y="523.0">jar</node>
+            <node x="0.0" y="0.0">model</node>
+            <node x="477.0" y="227.0">javafx</node>
+            <node x="308.0" y="301.0">sunw</node>
+            <node x="0.0" y="449.0">info</node>
+            <node x="393.0" y="523.0">Window</node>
+            <node x="350.0" y="153.0">images</node>
+            <node x="298.0" y="375.0">junit</node>
+            <node x="321.0" y="227.0">oracle</node>
+            <node x="514.0" y="523.0">Root</node>
+            <node x="288.0" y="449.0">org</node>
+            <node x="12.0" y="79.0">RightPanel</node>
+            <node x="137.0" y="523.0">Constants</node>
+            <node x="0.0" y="301.0">MovieWindow</node>
+            <node x="349.0" y="0.0">serialization</node>
+            <node x="0.0" y="153.0">META-INF</node>
+            <node x="430.0" y="449.0">jdk</node>
+            <node x="267.0" y="523.0">LeftPanel</node>
+            <node x="154.0" y="301.0">AboutWindow</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="RightPanel" target="model">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="293.0" y="276.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/src.zip!/javax/swing/Box.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="109" column="41" selection-start-line="109" selection-start-column="22" selection-end-line="109" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/serialization/LoadFromFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/LeftPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/PlotConstructor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MovieDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/AboutWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/MovieWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
+          <folding>
+            <element signature="e#1059#1060#0" expanded="true" />
+            <element signature="e#1096#1097#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Root.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ShowWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <element signature="e#1469#1470#0" expanded="true" />
+            <element signature="e#1545#1546#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MediaBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="32" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/RightPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1248,7 +1490,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>media-logger</last-edited>
+          <last-edited>themoviedbapi</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
