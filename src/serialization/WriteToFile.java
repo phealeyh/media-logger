@@ -1,5 +1,6 @@
 package serialization;
 
+import main.Constants;
 import model.Media;
 
 import java.io.FileOutputStream;
@@ -20,7 +21,7 @@ public class WriteToFile {
             out.writeObject(media);
             out.close();
             fileOut.close();
-            System.out.println("Serialized data is saved in " + directory);
+            System.out.println(Constants.DATA_LOCATION + directory);
         }catch(IOException i)
         {
             i.printStackTrace();

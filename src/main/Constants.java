@@ -31,5 +31,6 @@ public class Constants {
     public static final String IMAGE_PATH = "images/linux.png";
     public static final String IMAGE_URL = "http://image.tmdb.org/t/p/w500";
     public static final String POPULARITY = "Popularity: ";
-
+    public static final String NO_MEDIA = "Media not found";
+    public static final String DATA_LOCATION = "Serialized data is saved in ";
 }

@@ -3,6 +3,7 @@ package serialization;
 
 
 
+import main.Constants;
 import model.Media;
 
 import java.io.FileInputStream;
@@ -29,7 +30,7 @@ public class LoadFromFile {
             i.printStackTrace();
         }catch(ClassNotFoundException c)
         {
-            System.out.println("Media not found");
+            System.out.println(Constants.NO_MEDIA);
             c.printStackTrace();
         }
         return media;
