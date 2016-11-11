@@ -9,11 +9,6 @@
     <list default="true" id="0838c171-16de-4c1a-8ae6-0118f211333b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output/artifacts/media_logger_jar/media-logger.jar" afterPath="$PROJECT_DIR$/output/artifacts/media_logger_jar/media-logger.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media-logger.properties" afterPath="$PROJECT_DIR$/media-logger.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media-logger.xml" afterPath="$PROJECT_DIR$/media-logger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module_media-logger.xml" afterPath="$PROJECT_DIR$/module_media-logger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/AboutWindow.java" afterPath="$PROJECT_DIR$/src/main/AboutWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Constants.java" afterPath="$PROJECT_DIR$/src/main/Constants.java" />
     </list>
     <ignored path="media-logger.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,21 +41,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="59" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
+            <state relative-caret-position="527">
+              <caret line="31" column="72" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AboutWindow.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AboutWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/AboutWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+            <state relative-caret-position="297">
+              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -859,7 +854,7 @@
       <workItem from="1476674920432" duration="2000000" />
       <workItem from="1478172928821" duration="328000" />
       <workItem from="1478840601714" duration="404000" />
-      <workItem from="1478841017921" duration="1549000" />
+      <workItem from="1478841017921" duration="1794000" />
     </task>
     <task id="LOCAL-00001" summary="created boxes to structure the position of the text for the media window">
       <created>1472120583296</created>
@@ -987,11 +982,25 @@
       <option name="project" value="LOCAL" />
       <updated>1476676518663</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="changed colour for right panel along with fixing the about me window that wasn't appearing">
+      <created>1478842607111</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1478842607111</updated>
+    </task>
+    <task id="LOCAL-00020" summary="added correct file path for image">
+      <created>1478842800831</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1478842800831</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85050000" />
+    <option name="totallyTimeSpent" value="85295000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1066,7 +1075,9 @@
     <MESSAGE value="now retrieves an image of the movie and show that is being displayed" />
     <MESSAGE value="added popularity of shows and movies" />
     <MESSAGE value="refactored code into a 'main' package and made a static function that retrieves the the movie/show's details" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored code into a 'main' package and made a static function that retrieves the the movie/show's details" />
+    <MESSAGE value="changed colour for right panel along with fixing the about me window that wasn't appearing" />
+    <MESSAGE value="added correct file path for image" />
+    <option name="LAST_COMMIT_MESSAGE" value="added correct file path for image" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1318,14 +1329,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="59" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/javax/imageio/ImageIO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -1336,8 +1339,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/AboutWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        <state relative-caret-position="297">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="72" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
           <folding />
         </state>
       </provider>
