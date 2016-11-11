@@ -1,7 +1,10 @@
 package main;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * Created by tranc on 4/09/2016.
