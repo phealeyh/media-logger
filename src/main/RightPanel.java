@@ -27,7 +27,7 @@ public class RightPanel extends JPanel implements View{
     }
 
     private void setup(){
-        setBorder(BorderFactory.createLineBorder(Color.blue));
+        setBorder(BorderFactory.createLineBorder(Color.black));
         setPreferredSize(new Dimension(200, 200));
         setBackground(Color.white);
         setLayout(borderLayout = new BorderLayout());
