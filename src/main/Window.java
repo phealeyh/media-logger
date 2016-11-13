@@ -44,7 +44,6 @@ public class Window extends JFrame{ //starting window
     }
 
     private void setMenuOptions(){
-
         menu = new JMenu(Constants.MENU);
         JMenuItem saveAsItem, loadItem, closeItem, aboutItem;
         menu.add(aboutItem = new JMenuItem(Constants.ABOUT));
@@ -77,7 +76,7 @@ public class Window extends JFrame{ //starting window
         closeItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(getGlassPane(), "Closing Program");
+                JOptionPane.showMessageDialog(getGlassPane(), Constants.CLOSING_PROGRAM);
                 System.exit(0);
 
             }

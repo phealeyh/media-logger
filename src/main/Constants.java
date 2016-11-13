@@ -33,4 +33,5 @@ public class Constants {
     public static final String POPULARITY = "Popularity: ";
     public static final String NO_MEDIA = "Media not found";
     public static final String DATA_LOCATION = "Serialized data is saved in ";
+    public static final String CLOSING_PROGRAM = "Closing Program";
 }
