@@ -25,7 +25,7 @@ public class Window extends JFrame{ //starting window
     /* Panel containing the left and right panels */
     private Panel myPanel;
     /* FileChooser dialogs along with save and load locations */
-    private FileChooser fc;
+    private FileChooser fileChooser;
 
     public Window(){
         media = new Media();
@@ -59,16 +59,16 @@ public class Window extends JFrame{ //starting window
         saveAsItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                fc.saveFileDialog();
-                WriteToFile.serialiseMedia(media,fc.getSaveLocation());
+                fileChooser.saveFileDialog();
+                WriteToFile.serialiseMedia(media,fileChooser.getSaveLocation());
             }
         });
         loadItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                fc.loadFileDialog();
-                media.setMovies(LoadFromFile.deserialiseMedia(fc.getLoadLocation()).movies());
-                media.setShows(LoadFromFile.deserialiseMedia(fc.getLoadLocation()).shows());
+                fileChooser.loadFileDialog();
+                media.setMovies(LoadFromFile.deserialiseMedia(fileChooser.getLoadLocation()).movies());
+                media.setShows(LoadFromFile.deserialiseMedia(fileChooser.getLoadLocation()).shows());
                 myPanel.rightPanel().update();
 
             }
@@ -90,7 +90,7 @@ public class Window extends JFrame{ //starting window
 
 
     private void build(){
-        fc = new FileChooser(getGlassPane());
+        fileChooser = new FileChooser(getGlassPane());
         add(myPanel = new Panel());
     }
 
