@@ -114,25 +114,6 @@ public class RightPanel extends JPanel implements View{
     }
 
 
-    public void viewShow(String name){
-        if(media.mediaExists(name)){
-            JOptionPane.showMessageDialog(new JFrame(), "Showing " + name.substring(0,1).toUpperCase()
-                    + name.substring(1));
-        }
-        else{
-            JOptionPane.showMessageDialog(new JFrame(), "Show doesn't exist");
-        }
-    }
-
-    public void viewMovie(String name){
-        if(media.mediaExists(name)){
-            JOptionPane.showMessageDialog(new JFrame(), "Showing " + name.substring(0,1).toUpperCase()
-                    + name.substring(1));
-        }
-        else{
-            JOptionPane.showMessageDialog(new JFrame(), "Movie doesn't exist");
-        }
-    }
 
 
 

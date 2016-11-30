@@ -89,6 +89,7 @@ public class LeftPanel extends JPanel{
         public void actionPerformed(ActionEvent event){
             Object source = event.getActionCommand();
             String name = mediaName.getText();
+            //add button clicked
             if(source.equals(Constants.ADD)){
                 if(showButton.isSelected()){
                     rightPanel.addShow(name);
@@ -97,6 +98,7 @@ public class LeftPanel extends JPanel{
                     rightPanel.addMovie(name);
                 }
             }
+            //delete button clicked
             else if(source.equals(Constants.DELETE)){
                 if(showButton.isSelected()){
                     rightPanel.deleteShow(name);
@@ -105,18 +107,12 @@ public class LeftPanel extends JPanel{
                     rightPanel.deleteMovie(name);
                 }
             }
-            else if(source.equals(Constants.VIEW)){
-                if(showButton.isSelected()){
-                    rightPanel.viewShow(name);
-                }
-                else{
-                    rightPanel.viewMovie(name);
-                }
-            }
+            //show toggle clicked
             else if(source.equals(Constants.SHOW_TOGGLE)){
                 rightPanel.toggleShows();
             }
-            else{ //movies toggle has been chosen
+            //movies toggle has been chosen
+            else{
                 rightPanel.toggleMovies();
                 //Show only list of movies through the right panel
             }
