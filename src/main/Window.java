@@ -121,9 +121,6 @@ public class Window extends JFrame{ //starting window
             return rightPanel;
         }
 
-        private LeftPanel leftPanel(){
-            return leftPanel;
-        }
     }
 
 }
