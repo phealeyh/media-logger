@@ -90,22 +90,24 @@ public class LeftPanel extends JPanel{
             Object source = event.getActionCommand();
             String name = mediaName.getText();
             //add button clicked
-            if(source.equals(Constants.ADD)){
+            if(source.equals(Constants.ADD) && !name.isEmpty()){
                 if(showButton.isSelected()){
                     rightPanel.addShow(name);
                 }
                 else{
                     rightPanel.addMovie(name);
                 }
+                mediaName.setText("");
             }
             //delete button clicked
-            else if(source.equals(Constants.DELETE)){
+            else if(source.equals(Constants.DELETE) && !name.isEmpty()){
                 if(showButton.isSelected()){
                     rightPanel.deleteShow(name);
                 }
                 else{
                     rightPanel.deleteMovie(name);
                 }
+                mediaName.setText("");
             }
             //show toggle clicked
             else if(source.equals(Constants.SHOW_TOGGLE)){
