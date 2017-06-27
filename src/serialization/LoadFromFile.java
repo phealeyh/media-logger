@@ -18,18 +18,15 @@ public class LoadFromFile {
 
     public static Media deserialiseMedia(String directory){
         Media media = null;
-        try
-        {
+        try{
             FileInputStream fileIn = new FileInputStream(directory);
             ObjectInputStream in = new ObjectInputStream(fileIn);
             media = (Media) in.readObject();
             in.close();
             fileIn.close();
-        }catch(IOException i)
-        {
+        }catch(IOException i) {
             i.printStackTrace();
-        }catch(ClassNotFoundException c)
-        {
+        }catch(ClassNotFoundException c) {
             System.out.println(Constants.NO_MEDIA);
             c.printStackTrace();
         }
